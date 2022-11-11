@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="App">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="index.js" defer></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" 
+        rel="stylesheet"/>
+        <div class="header">
+          <ul class="headerLinks">
+            <li><a href="/donate/donate.html">DONATE</a></li>
+            <li><a href="/index/index.html#calendar">CALENDAR</a></li>
+            <li><a href="/news/news.html">NEWS</a></li>
+            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+            <li>
+            <div class="dropdown">
+              <a href="/index/index.html#calendar">COMMITTEES</a>
+              <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">FUNDRAISING</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">CHAMPIONSHIPS</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">SOCIAL</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">COMMUNITY SERVICE</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+            <li><a href="/memberPage/members.html">MEMBERS</a></li>
+          </ul>
+          <a href="/index/index.html" class="logoLink"><img
+              src="/header/SkillsLVTI.jpg"
+              class="SkillsLogo"
+              alt="SKILLS USA LOGO"
+              height={100}
+            />
+            </a>
+        </div>
+        <ul class="appLogos">
+          <li><img src ="/header/youtube.png" id="yt" /></li>
+          <li><img src ="/header/fb.png" id="facebook"/></li>
+          <li><img src ="/header/insta.png" id="insta" /></li>
+        </ul>
+
+        <div class="NewsSection">
+            <p class="NewsHeader">SkillsUSA LVTI in The News</p>
+            <div class="NewsArea" id="NewsArea">
+    
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="partnerSection">
+              <p class="partnerHeader">Business Partners</p>
+              <div class="partnerImgHldr">
+                <ul class="partnerImg">
+                  <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+                  <li><img src="/index/partnerLogo/bizLogo3.png" id="morg"></li>
+                  <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyrightSection">
+              <p>
+                © 2022 SkillsUSA LVTI, Inc.
+              </p>
+            </div>
+          </div>
+    </div>
+    <script>
+                var memberImgs = ["/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg"
+            ,"/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg", "/newsImgs/skillsNews.jpg"]
+        var news1 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+        
+        var news2 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+
+        var news3 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+        
+        var news4 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+        
+        var news5 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+
+        var news6 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+
+        var news7 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+
+        var news8 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+
+        var news9 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+         "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
+        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+        var members =[news1, news2, news3, news4, news5, news6, news7, news8, news9]
+
+        var membersAmount = members.length;
+
+        for (let i = 0; i < membersAmount; i++){
+            //
+    
+            var currentMember = members[i]
+            console.log(currentMember, i)
+            //INDEX!!! INDEX!!!//
+        var list = document.createElement('li');
+        list.id = 'list'+i;
+        list.className = 'bubbleThingHolder';
+        document.body.appendChild(list);
+        document.getElementById("NewsArea").appendChild(list);
+          //
+        var div = document.createElement('div');
+        div.id = 'div'+i;
+        div.className = 'bubbleThing';
+        document.body.appendChild(div);
+        document.getElementById("list"+i).appendChild(div);
+        //
+        var img = document.createElement("img");
+        img.src = memberImgs[i];
+        img.id = 'profileImg'+i;
+        img.className = 'profileImg'
+        var block = document.getElementById("div"+i)
+        block.appendChild(img);
+          //
+        var div2 = document.createElement('div');
+        div2.id = 'bottomBubble'+i;
+        div2.className = 'bubbleThing2';
+        document.body.appendChild(div2);
+        document.getElementById("div"+i).appendChild(div2);
+
+        
+        
+        var memberName = document.createElement("p");
+        var text = document.createTextNode(currentMember[0]);
+        memberName.appendChild(text);
+        memberName.id = 'p'+ i;
+        memberName.className = 'memberName';
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(memberName);
+
+        var description = document.createElement("p");
+        var text = document.createTextNode(currentMember[1]);
+        description.appendChild(text);
+        description.id = 'p'+ i;
+        description.className = 'newsDescription';
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(description);
+
+
+        var article = document.createElement("a")
+        article.id = "arti" + i;
+        article.className = "linkButton"
+        article.href = currentMember[2]
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(article);
+
+
+        var btn = document.createElement("button");
+        btn.innerHTML = "Read More";
+        btn.id = "butt"+i;
+        btn.className = "newsBlockButt";
+        var element = document.getElementById('arti'+i);
+        element.appendChild(btn)
+
+        }
+    </script>
+</body>
+</html>

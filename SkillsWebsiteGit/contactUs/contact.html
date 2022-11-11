@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="App">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="index.js" defer></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" 
+        rel="stylesheet"/>
+        <div class="header">
+          <ul class="headerLinks">
+            <li><a href="/donate/donate.html">DONATE</a></li>
+            <li><a href="/index/index.html#calendar">CALENDAR</a></li>
+            <li><a href="/news/news.html">NEWS</a></li>
+            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+            <li>
+            <div class="dropdown">
+              <a href="/index/index.html#calendar">COMMITTEES</a>
+              <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">FUNDRAISING</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">CHAMPIONSHIPS</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">SOCIAL</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">COMMUNITY SERVICE</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+            <li><a href="/memberPage/members.html">MEMBERS</a></li>
+          </ul>
+          <a href="/index/index.html" class="logoLink"><img
+              src="/header/SkillsLVTI.jpg"
+              class="SkillsLogo"
+              alt="SKILLS USA LOGO"
+              height={100}
+            />
+            </a>
+        </div>
+        
+  
+        <ul class="appLogos">
+          <li><img src ="/header/youtube.png" id="yt" /></li>
+          <li><img src ="/header/fb.png" id="facebook"/></li>
+          <li><img src ="/header/insta.png" id="insta" /></li>
+        </ul>
+
+        <div class="memberSide">
+            <p class="memberHeader">Contact Us</p>
+            <ul class="MembersList" id="membList">
+    
+            </ul>
+  
+          </div>
+          
+          <div class="footer">
+            <div class="partnerSection">
+              <p class="partnerHeader">Business Partners</p>
+              <div class="partnerImgHldr">
+                <ul class="partnerImg">
+                  <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+                  <li><img src="/index/partnerLogo/bizLogo3.png" id="morg"></li>
+                  <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyrightSection">
+              <p>
+                © 2022 SkillsUSA LVTI, Inc.
+              </p>
+            </div>
+          </div>
+    </div>
+    <script>
+        var memberImgs = ["/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/rate.jpg"]
+        var leader = ["Jason McCuish","12th-11th Grade", "English", "Leader","email@outlook.com"]
+        var leader2 = ["Ms. Price","12th-11th Grade", "English", "Leader","email@outlook.com"]
+        var leader3 = ["Ms. B","12th-11th Grade", "Childcare ", "Leader","email@outlook.com"]
+        var leader4 = ["Mr. Rateu","12th-11th Grade", "TV media ", "Leader","email@outlook.com"]
+
+
+        var members =[leader, leader2, leader3,leader4]
+        var membersAmount = members.length;
+
+        
+        for (let i = 0; i < membersAmount; i++){
+            //
+    
+            var currentMember = members[i]
+            console.log(currentMember, i)
+            //
+        var list = document.createElement('li');
+        list.id = 'list'+i;
+        list.className = 'bubbleThingHolder';
+        document.body.appendChild(list);
+        document.getElementById("membList").appendChild(list);
+
+        var div = document.createElement('div');
+        div.id = 'div'+i;
+        div.className = 'bubbleThing';
+        document.body.appendChild(div);
+        document.getElementById("list"+i).appendChild(div);
+        var img = document.createElement("img");
+        img.src = memberImgs[i];
+        img.id = 'profileImg'+i;
+        img.className = 'profileImg'
+        var block = document.getElementById("div"+i)
+        block.appendChild(img);
+
+        var div2 = document.createElement('div');
+        div2.id = 'bottomBubble'+i;
+        div2.className = 'bubbleThing2';
+        document.body.appendChild(div2);
+        document.getElementById("div"+i).appendChild(div2);
+
+        
+        
+        var memberName = document.createElement("p");
+        var text = document.createTextNode(currentMember[0]);
+        memberName.appendChild(text);
+        memberName.id = 'p'+ i;
+        memberName.className = 'memberName';
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(memberName);
+        
+        var memberShopt = document.createTextNode(currentMember[2]);
+        var coma = document.createTextNode(", ")
+
+        var memberGrade = document.createElement("p");
+        var memberGradet = document.createTextNode(currentMember[1]);
+        memberGrade.appendChild(memberGradet);
+        memberGrade.appendChild(coma);
+        memberGrade.appendChild(memberShopt);
+        memberGrade.id = 'p'+ i;
+        memberGrade.className = 'memberGrade';
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(memberGrade);
+
+        var memberPosition = document.createElement("p");
+        var memberPositiont = document.createTextNode(currentMember[3]);
+        memberPosition.appendChild(memberPositiont);
+        memberPosition.id = 'p'+ i;
+        memberPosition.className = 'memberPosition';
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(memberPosition);
+
+        var email = document.createElement("p");
+        var emailT = document.createTextNode(currentMember[4]);
+        email.appendChild(emailT);
+        email.id = 'email'+ i;
+        email.className = 'email';
+        var element = document.getElementById('bottomBubble'+i);
+        element.appendChild(email);
+        }
+    </script>
+</body>
+</html>
