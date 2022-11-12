@@ -113,9 +113,19 @@ body {
   z-index: 2;
 }
 .memberHeader{
-  margin-left: 40px;
-  font-size: 30px;
-  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+}
+.rbLine{
+  position: relative;
+  top: -36px;
+  margin-left: 38.5%;
+  width: 23%;
+  height: 3px;
+  background: linear-gradient(to left, #f57076, #94cbf9 100%);
+  background-position: 0 100%;
+  background-size: 100% 3px;
+  background-repeat: repeat-x;
 }
 .bubbleThingHolder{
     list-style: none;

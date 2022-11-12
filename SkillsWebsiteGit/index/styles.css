@@ -328,7 +328,7 @@ body {
     background-size: 100% 3px;
     background-repeat: repeat-x;
   }
-  .brLineCalendar{
+  .rbLineCalendar{
     position: relative;
     top: -36px;
     margin-left: 43%;
@@ -464,8 +464,8 @@ body {
   opacity: 0;
   position: absolute;
   top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  transform: translate(-10%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
 
@@ -488,14 +488,15 @@ body {
   font-weight: 800;
 }
 .committeeNames{
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   font-weight: 800;
   margin: 0;
   margin-bottom:60px;
   width: inherit;
   height: 80px;
   background-color: #ffffff;
-  padding-top:20px;
+  padding-top:30px;
+  padding-bottom: 60px;
 }
 
 /* committees EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/

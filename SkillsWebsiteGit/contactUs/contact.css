@@ -117,10 +117,20 @@ body {
     box-shadow: 0px -2px 5px black;
   }
     .memberHeader{
-        margin-left: 40px;
         font-size: 40px;
-        font-weight: 500;
+        font-weight: 700;
         text-align: center;
+    }
+    .rbLine{
+      position: relative;
+      top: -36px;
+      margin-left: 44.5%;
+      width: 11%;
+      height: 3px;
+      background: linear-gradient(to left, #f57076, #94cbf9 100%);
+      background-position: 0 100%;
+      background-size: 100% 3px;
+      background-repeat: repeat-x;
     }
     .bubbleThingHolder{
         list-style: none;
