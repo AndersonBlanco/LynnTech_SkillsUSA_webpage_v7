@@ -46,6 +46,7 @@ body {
   left: -24px;
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  z-index: 3;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -277,6 +278,12 @@ body {
     color: rgb(59, 59, 59);
   }
 
+  .achievmentsSection{
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(236,81,101,1) 91%, rgba(255,32,60,1) 100%);
+    height: 400px;
+  }
   /* NEWS SECTION */
 
   .NewsSection{
@@ -499,6 +506,14 @@ body {
   padding-bottom: 60px;
 }
 
+.commLinks{
+  width: 100%;
+  height: 89%;
+  position: absolute;
+  z-index: 3;
+  transform: translate(-50%, -0%);
+  -ms-transform: translate(-50%, -50%)
+}
 /* committees EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
   .calendarSection{
     
