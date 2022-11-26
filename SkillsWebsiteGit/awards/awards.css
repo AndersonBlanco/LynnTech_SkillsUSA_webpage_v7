@@ -278,9 +278,9 @@ body {
 
 
 #gg{
-  
+  display: none;
 }
-#gg:checked .dropdown2 .dropdown2-content{
+#gg:checked + label > .dropdown2 .dropdown2-content{
   display: block;
 }
 .dropdown2 {
