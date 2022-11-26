@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  transition-duration: 1s;
 }
 body {
   margin: 0;
@@ -240,9 +241,10 @@ body {
   color: white;
   margin: 0;
 }
-.footer{
+footer{
   position: relative;
   z-index: -2;
+  bottom: -5rem;
 }
 
 
@@ -257,6 +259,9 @@ body {
   background-color: #00A4BD;
   
 }
+
+
+/*
 #award1{
   display:none;
 }
@@ -319,4 +324,57 @@ body {
 
 .artAwards{
   font-size: 17px;
+}
+
+
+
+*/ 
+
+/* AWRADS */
+
+.chapterAwards, .membersAwards, .teachersAwards{
+  background-color: transparent; 
+  font-size: .7rem; 
+   transition-duration: 1s;
+   text-align: left;
+   align-items: center;
+   justify-content: center; 
+}
+
+.chapterAwards h1, .membersAwards h1, .teachersAwards h1{
+  color: black; 
+  transition-duration: 1s;
+  cursor: pointer; 
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+legend{
+  transition-duration: 1s;
+}
+
+
+
+.chapterAwards ul, .membersAwards ul, .teachersAwards ul{
+  font-size: 1.25rem;
+  list-style-type: none;
+  transition-duration: 1s;
+  overflow: hidden;
+  height: 0rem; 
+
+}
+
+
+.secondSection{
+  background-color: transparent;
+  height: 100%;
+  position: relative;
+}
+
+.AWARDS{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10rem;
+  padding-top: 7rem;
 }
