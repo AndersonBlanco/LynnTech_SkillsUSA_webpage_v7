@@ -29,15 +29,15 @@
             <li><a href="/news/news.html">NEWS</a></li>
             <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
             <li>
-              <div class="dropdown">
-                <a href="/index/index.html#comm">COMMITTEES</a>
-                <div class="dropdown-content">
-                <a href="/fundraising/fundraising.html">FUNDRAISING</a>
-                <a href="/championship/champ.html">CHAMPIONSHIPS</a>
-                <a href="/social/social.html">SOCIAL</a>
-                <a href="/community/community.html">COMMUNITY SERVICE</a>
-                </div>
+            <div class="dropdown">
+              <a href="/index/index.html#calendar">COMMITTEES</a>
+              <div class="dropdown-content">
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">FUNDRAISING</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">CHAMPIONSHIPS</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">SOCIAL</a>
+              <a href="https://www.youtube.com/watch?v=t2KBSeK7z0Q&list=RDt2KBSeK7z0Q&start_radio=1">COMMUNITY SERVICE</a>
               </div>
+            </div>
             </li>
             <li><a href="/contactUs/contact.html">CONTACT US</a></li>
             <li><a href="/memberPage/members.html">MEMBERS</a></li>
@@ -59,7 +59,7 @@
       </ul>
         
         <div class="memberSide">
-          <p class="memberHeader">Leadership members<div class="rbLine"></div></p>
+          <p class="memberHeader">Leadership members</p>
           <ul class="MembersList" id="membList">
   
           </ul>
@@ -67,6 +67,27 @@
         </div>
         <div class="associatesSide">
         </div>
+
+
+        <div class = "recognitions" id = "recos">
+          <p>Recognitions</p>
+          <div class = "list">
+          
+          </div>
+
+
+        </div>
+
+
+        <div class = "alumnies">
+          <ul>
+
+          </ul>
+
+
+        </div>
+
+
         <div class="partnerSection">
           <p class="partnerHeader">Business Partners</p>
           <div class="partnerImgHldr">
@@ -83,26 +104,35 @@
           </p>
         </div>
       </div>
+
+      <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
     <script>
-       var memberImgs = ["/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/ant.jpg", "/memberPage/members/eli.jpg", "/memberPage/members/gis.jpg","/memberPage/members/baka.jpg", "/memberPage/members/jojo.jpg","/memberPage/members/baka.jpg",
+      //v
+       var memberImgs = ["/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/rate.jpg","/memberPage/members/rate.jpg", "/memberPage/members/eli.jpg","/memberPage/members/ant.jpg", "/memberPage/members/gis.jpg","/memberPage/members/baka.jpg", "/memberPage/members/jojo.jpg","/memberPage/members/baka.jpg",
        "/memberPage/members/adb.jpg","/memberPage/members/este.jpg","/memberPage/members/jar.jpg","/memberPage/members/say.jpg", "/memberPage/members/nac.jpg","/memberPage/members/daf.jpg","/memberPage/members/dana.jpg"]
         var leader = ["Jason McCuish","12th-11th Grade", "English", "Leader"]
         var leader2 = ["Ms. Price","12th-11th Grade", "English", "Leader"]
         var leader3 = ["Ms. B","12th-11th Grade", "Childcare Shop", "Leader"]
         var leader4 = ["Mr. Rateu","12th-11th Grade", "TV media shop", "Leader"]
-        var vicePres= ["Eli Sok","12th Grade", "TV Media", "President"]
-        var president = ["Anthony","11th Grade", "TV Media", "Vice Prsident"]
+        var president = ["Eli Sok","12th Grade", "TV Media", "Vice-President"]
+        var vicePres = ["Anthony","11th Grade", "TV Media", "Vice Prsident"]
         var secretary = ["Giselle","11th Grade", "Health Tech", "Secretary"]
         var treasurer = ["Harry","12th Grade", "PWD", "Treasurer"]
-        var member1 = ["Joseph","12th Grade", "Carpentry", ""]
-        var member2 = ["Jospeh","12th Grade", "PWD", ""]
-        var member3 = ["Anderson","11th Grade", "PWD", ""]
-        var member4 = ["Esteban","11th Grade", "PWD", ""]
-        var member5 = ["Jared","11th Grade", "IT", ""]
-        var member6 = ["Saydy","11th Grade", "Health Tech", ""]
-        var member7 = ["Luis","11th Grade", "Electrical", ""]
-        var member8 = ["Dafne","10th Grade", "TV Media", ""]
-        var member9 = ["Dana","9th Grade", "N/A", ""]
+        var member1 = ["Joseph","12th Grade", "Carpentry", "Member"]
+        var member2 = ["Jospeh","12th Grade", "PWD", "Member"]
+        var member3 = ["Anderson","11th Grade", "PWD", "Member"]
+        var member4 = ["Esteban","11th Grade", "PWD", "Member"]
+        var member5 = ["Jared","11th Grade", "IT", "Member"]
+        var member6 = ["Saydy","11th Grade", "Health Tech", "Member"]
+        var member7 = ["Luis","11th Grade", "Electrical", "Member"]
+        var member8 = ["Dafne","10th Grade", "TV Media", "Member"]
+        var member9 = ["Dana","9th Grade", "N/A", "Member"]
         var members =[leader, leader2, leader3,leader4, president, vicePres, secretary, treasurer, member1, member2, member3, member4,
          member5, member6, member7, member8, member9,]
 
@@ -229,6 +259,191 @@
         var element = document.getElementById('bottomBubbleA'+i);
         element.appendChild(associateName);
         }*/
+
+
+
+
+
+
+
+
+
+
+
+
+//RCOGNITION SECTION, EMBEDED IN MEMBERS PAGE
+       //recognized students
+      var recognizedStudents = [
+        {
+          name: "Anthony Gonzalez",
+          imgURI: '/memberPage/members/ant.jpg',
+          events:[
+            {
+            details: "Singer of the state",
+            event:  "2022 National Skills USA"
+          },
+          {
+            details: "National Communityt Service Competitor",
+            event: "2022 Skills USA Nationals "
+          }
+        ]
+        },
+        {
+          name: "Giselle Perlera",
+          imgURI: '/memberPage/members/gis.jpg',
+          events:[
+            {
+            details: "Chapter of the Year rprst.",
+            event: "2022 National Skills USA",
+          }
+        ]
+        },
+      ]
+
+
+      const styles = {
+        row:{
+          display: "flex",
+          flexDirection: "row",
+          backgroundColor: "",
+          marginBlock: "5%",
+          textAlign: "center",
+          alignItems: "center",
+          justifyConytent:"center",
+          paddingInlineStart: "20%",
+          paddingInlineEnd: "20%",
+          height: "inherit",
+          listStyleType: "none",
+
+
+        },
+
+        details:{
+          display: "flex",
+          flexDirection: "column",
+          backgroundColor: "transparent",
+          height: "100%",
+          width: "100%",
+          listStyleType: "none"
+        }
+
+
+      }
+
+      for(let stus of recognizedStudents){
+
+
+    }
+
+    recognizedStudents.map((stus, idx) =>{
+          $(function(){
+     
+          $(".recognitions .list").append(`<div><img src = '${stus.imgURI}'/> <span  class = "data"><h2> ${stus.name}</h2>  ${stus.events.map((i, idx) =>{return `<h4>&#x2022 ${i.event} <br/>${stus.events}</h4>`})}</span><br/></div>`)
+          $(".recognitions .list div").css(styles.row)
+          $(".recognitions .list div .data").css(styles.details)
+      })
+    })
+
+
+
+
+
+//ALUMNIES 
+        //alumnies students
+          var alumnies = [
+        {
+          name: "Anjelis Armaro",
+          imgURI: "unknown",
+          details: "Officer of the year",
+          dtae: "2022 National Skills USA"
+        }
+      ]
+
+      for(let alumny of alumnies){
+            $(function(){
+        $(".alumnies")
+
+        //code data according to selected style 
+      })
+
+      }
+
+
+
+
+      //EXCEL 
+      function FETCH_METHOD(string){
+        var req = new XMLHttpRequest();
+       fetch(string)
+       .then(resp => resp.text())
+       .then(txt => alert(txt))
+
+       return req.response
+      }
+
+
+      var ExcelToJSON = function() {
+
+this.parseExcel = function(file) {
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    var data = e.target.result;
+    var workbook = XLSX.read(data, {
+      type: 'binary'
+    });
+    workbook.SheetNames.forEach(function(sheetName) {
+      // Here is your object
+      var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+      var json_object = JSON.stringify(XL_row_object);
+      alert(JSON.parse(json_object));
+      jQuery('#xlx_json').val(json_object);
+    })
+  };
+
+  reader.onerror = function(ex) {
+    console.log(ex);
+  };
+
+  reader.readAsBinaryString(file);
+};
+};
+
+
+
+       
+
+
+
+
+function read(){
+  let reader = new FileReader();
+  let file = "../DATA/Members.xlsx"
+  render.onload = () =>{
+    //callback(reader.result)
+    alert(reader.result)
+  }
+
+  reader.readAsText(file)
+}
+
+read()
+
+
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -46,7 +46,6 @@ body {
   left: -24px;
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  z-index: 3;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -60,7 +59,7 @@ body {
 }
 .dropdown-content a:hover {
   color: #FFFFFF !important;
-  background-color: #00A4BD !important;
+  background-color: rgb(138, 136, 136) !important;
 }
 /*DROPDOWN MENU COMMITTEES*/
 
@@ -170,8 +169,7 @@ body {
     width: 100vw;
     font-size: 40px;
     font-weight: 900;
-    z-index: 4 ; 
-    opacity: 1 !important;
+    z-index: 4;
     text-shadow: 5px 0px 10px black;
   }
 
@@ -189,7 +187,6 @@ body {
     font-size: 20px;
     font-weight: 900;
     z-index: 4;
-    opacity: 1 !important;
     text-shadow: 5px 6px 10px black;
   }
   .blueFilter{
@@ -280,81 +277,6 @@ body {
     color: rgb(59, 59, 59);
   }
 
-  .achievmentsSection{
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(236,81,101,1) 91%, rgba(255,32,60,1) 100%);
-    height: 400px;
-  }
-
-  .achievmentsSection ul{
-    margin-top: 0;
-  }
-
-  .iconAward{
-    
-    
-  }
-  .achievmentsSection li{
-    list-style: none;
-    display: inline;
-    margin-right: 60px;
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 600;
-  }
-
-  @property --num {
-    syntax: "<integer>";
-    initial-value: 100000;
-    inherits: false;
-  }
-  
-  #money {
-    animation: counter 5s  alternate ease-in-out;
-    counter-reset: num var(--num);
-    font: 500 40px system-ui;
-    padding: .2rem;
-
-  }
-  #money::after{
-    content: counter(num);
-  }
-  
-  @keyframes counter {
-    from {
-      --num: 0;
-    }
-    to {
-      --num: 100000;
-    }
-  }
-  
-  @property --num2 {
-    syntax: "<integer>";
-    initial-value: 54;
-    inherits: false;
-  }
-  
-  #medals {
-    animation: counter2 5s  alternate ease-in-out;
-    counter-reset: num2 var(--num2);
-    font: 500 40px system-ui;
-    padding: .2rem;
-
-  }
-  #medals::after{
-    content: counter(num2);
-  }
-  
-  @keyframes counter2 {
-    from {
-      --num2: 0;
-    }
-    to {
-      --num2: 54;
-    }
-  }
   /* NEWS SECTION */
 
   .NewsSection{
@@ -406,7 +328,7 @@ body {
     background-size: 100% 3px;
     background-repeat: repeat-x;
   }
-  .rbLineCalendar{
+  .brLineCalendar{
     position: relative;
     top: -36px;
     margin-left: 43%;
@@ -542,8 +464,8 @@ body {
   opacity: 0;
   position: absolute;
   top: 40%;
-  left: 20%;
-  transform: translate(-10%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
 
@@ -566,25 +488,16 @@ body {
   font-weight: 800;
 }
 .committeeNames{
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   font-weight: 800;
   margin: 0;
   margin-bottom:60px;
   width: inherit;
   height: 80px;
   background-color: #ffffff;
-  padding-top:30px;
-  padding-bottom: 60px;
+  padding-top:20px;
 }
 
-.commLinks{
-  width: 100%;
-  height: 89%;
-  position: absolute;
-  z-index: 3;
-  transform: translate(-50%, -0%);
-  -ms-transform: translate(-50%, -50%)
-}
 /* committees EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
   .calendarSection{
     
@@ -663,3 +576,254 @@ body {
     position: relative;
     z-index: -2;
   }
+
+
+
+
+
+
+
+
+.comittees{
+  background-color: transparent;
+  padding-inline: 10rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  margin-block: 5rem;
+}
+
+.comittees .comittee{
+  margin-inline: 2rem;
+}
+
+#championshipCom{
+height: 25rem;
+width: 25rem;
+background-color: white; 
+text-align: center;
+align-items: center;
+justify-content: center; 
+cursor: pointer;
+} 
+
+#championshipCom .backgroundImg{
+  background-image: url("./championshipCom_v2.png");
+  background-size: cover;
+  background-position: center;
+  height: 10rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  background-blend-mode: overlay;
+  transition-duration: .5s;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+#championshipCom .backgroundImg:hover{
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+ #chmpshpComBackImg:hover > #join1{
+  opacity: 1;
+}
+#championshipCom .backgroundImg h1{
+  color: white; 
+  position: relative;
+  bottom: -50%;
+  opacity: 0; 
+
+  transition-duration: .5s;
+}
+
+
+
+#championshipCom .description{
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: black;
+}
+
+
+
+
+
+#fundraisingCom{
+  height: 25rem;
+  width: 25rem;
+  background-color: white; 
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  cursor: pointer;
+  } 
+  
+  #fundraisingCom .backgroundImg{
+    background-image: url("./championshipCom_v2.png");
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    background-blend-mode: overlay;
+    transition-duration: .5s;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+  
+  }
+  
+  #fundraisingCom .backgroundImg:hover{
+    background-color: rgba(0,0,0,0.7);
+  
+  }
+  
+   #fundsComBackImg:hover > #join2{
+    opacity: 1;
+  }
+  #fundraisingCom .backgroundImg h1{
+    color: white; 
+    position: relative;
+    bottom: -50%;
+    opacity: 0; 
+  
+    transition-duration: .5s;
+  }
+  
+  
+  
+  #fundraisingCom .description{
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: black;
+  }
+
+  
+
+
+
+
+  #communityCom{
+    height: 25rem;
+    width: 25rem;
+    background-color: white; 
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+  
+    } 
+    
+    #communityCom .backgroundImg{
+      background-image: url("./championshipCom_v2.png");
+      background-size: cover;
+      background-position: center;
+      height: 10rem;
+      text-align: center;
+      align-items: center;
+      justify-content: center; 
+      background-blend-mode: overlay;
+      transition-duration: .5s;
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+    
+    }
+    
+    #communityCom .backgroundImg:hover{
+      background-color: rgba(0,0,0,0.7);
+    
+    }
+    
+     #communityComBackImg:hover > #join3{
+      opacity: 1;
+    }
+    #communityCom .backgroundImg h1{
+      color: white; 
+      position: relative;
+      bottom: -50%;
+      opacity: 0; 
+    
+      transition-duration: .5s;
+    }
+    
+    
+    
+    #communityCom .description{
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: black;
+      padding-inline: 1.5rem;
+    }
+
+
+
+
+
+
+
+    #socialCom{
+      height: 23rem;
+      width: 25rem;
+      background-color: transparent; 
+      text-align: center;
+      align-items: center;
+      justify-content: center; 
+      cursor: pointer;
+      box-shadow: 0rem 0rem 1rem black;
+      } 
+      
+      #socialCom .backgroundImg{
+        background-image: url("./championshipCom_v2.png");
+        background-size: cover;
+        background-position: center;
+        height: 10rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center; 
+        background-blend-mode: overlay;
+        transition-duration: .5s;
+        margin-top: -1.5rem;
+        margin-bottom: 2rem;
+      
+      }
+      
+      #socialCom .backgroundImg:hover{
+        background-color: rgba(0,0,0,0.7);
+      
+      }
+      
+       #socialComBackImg:hover > #join4{
+        opacity: 1;
+      }
+      #socialCom .backgroundImg h1{
+        color: white; 
+        position: relative;
+        bottom: -50%;
+        opacity: 0; 
+      
+        transition-duration: .5s;
+      }
+      
+      
+      
+      #socialCom .description{
+        font-size: 1.15rem;
+        font-weight: 1000;
+        margin-top: -.5rem;
+        color: black;
+        padding-inline: 1.5rem;
+        letter-spacing: .1rem;
+        background-color: rgb(235, 235, 235);
+        height: 12rem;
+      }
+
+
+      
+
+
+    
+
+
