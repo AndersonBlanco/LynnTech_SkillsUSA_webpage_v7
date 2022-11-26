@@ -29,6 +29,7 @@
             <li><a href="/index/index.html#calendar">CALENDAR</a></li>
             <li><a href="/news/news.html">NEWS</a></li>
             <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+            <li><a href="/awards/awards.html">AWARDS</a></li>
             <li>
             <div class="dropdown">
               <a href="/index/index.html#comm">COMMITTEES</a>
@@ -155,15 +156,14 @@
            </p>
         </div>
       </div>
-      <div class="achievmentsSection"><ul>
-        <li>Fundraised <span id="money"></span> dollars</li>
+      <!--<div class="achievmentsSection"><ul>
+        <li><img src="community.svg" class="iconAward">Fundraised <span id="money"></span> dollars</li>
         <li>Helped members obtain scholarships</li>
-        <li>Won <span id="medals"></span> medals</li>
-      </ul></div>
+        <li><img src="community.svg" class="iconAward">Won <span id="medals"></span> medals</img></li>
+      </ul></div>-->
       <div class="NewsSection">
         <p class="NewsHeader">SkillsUSA LVTI in The News<div class="rbLineNews"></div></p>
         <div class="NewsArea" id="NewsArea">
-
         </div>
       </div>
       <div class="calendarSection" id="calendar">
@@ -205,6 +205,9 @@
         let newIndex = [...slides.children].indexOf(activeSlide) + offset
         if (newIndex < 0) newIndex = slides.children.length - 1
         if (newIndex >= slides.children.length) newIndex = 0
+        
+        //IMPORTANT, I need to have a timer that changes the background
+        // and it resets everytime a new slide appears.
         
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
