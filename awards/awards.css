@@ -242,9 +242,7 @@ body {
   margin: 0;
 }
 footer{
-  position: relative;
-  z-index: -2;
-  bottom: -5rem;
+  
 }
 
 
@@ -322,13 +320,27 @@ footer{
   font-size: 18px;
 }
 
+*/ 
 .artAwards{
-  font-size: 17px;
+  font-size: 18px;
+  margin-left: 1rem;
+}
+.artAwards a{
+  margin: 5px;
+  
+}
+.artAwards a:hover{
+  color: #00A4BD !important;
+}
+.headerAwards{
+  font-weight: 700;
+}
+.descAwards{
+  margin-left: 1rem;
 }
 
 
 
-*/ 
 
 /* AWRADS */
 
@@ -377,4 +389,6 @@ legend{
   flex-direction: column;
   padding-inline: 10rem;
   padding-top: 7rem;
+  box-shadow: 0 1px 3px -2px rgb(0, 0, 0);
+  position: relative;
 }
