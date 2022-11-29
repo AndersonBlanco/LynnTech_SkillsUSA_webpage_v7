@@ -59,7 +59,7 @@ body {
 }
 .dropdown-content a:hover {
   color: #FFFFFF !important;
-  background-color: rgb(138, 136, 136) !important;
+  background-color: #00A4BD !important;
 }
 /*DROPDOWN MENU COMMITTEES*/
 
@@ -642,7 +642,7 @@ cursor: pointer;
 
 
 #championshipCom .description{
-  font-size: 1.25rem;
+  font-size: 1vw;
   font-weight: 900;
   color: black;
 }
@@ -696,7 +696,7 @@ cursor: pointer;
   
   
   #fundraisingCom .description{
-    font-size: 1.25rem;
+    font-size: 1vw;
     font-weight: 900;
     color: black;
   }
@@ -752,7 +752,7 @@ cursor: pointer;
     
     
     #communityCom .description{
-      font-size: 1.25rem;
+      font-size: 1vw;
       font-weight: 900;
       color: black;
       padding-inline: 1.5rem;
@@ -810,7 +810,7 @@ cursor: pointer;
       
       
       #socialCom .description{
-        font-size: 1.15rem;
+        font-size: 1vw;
         font-weight: 1000;
         margin-top: -.5rem;
         color: black;
