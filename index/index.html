@@ -24,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" 
         rel="stylesheet"/>
         <div class="header">
-          <ul class="headerLinks">
+          <ul class="headerLinks" >
             <li><a href="/donate/donate.html">DONATE</a></li>
             <li><a href="/index/index.html#calendar">CALENDAR</a></li>
             <li><a href="/news/news.html">NEWS</a></li>
@@ -45,6 +45,37 @@
             <li><a href="/contactUs/contact.html">CONTACT US</a></li>
             <li><a href="/memberPage/members.html">MEMBERS</a></li>
           </ul>
+            <div class="mobile-dropdown">
+              <p>ppppppp</p>
+            <ul class="mobile-dropdown-content" >
+              <li><a href="/donate/donate.html">DONATE</a></li>
+              <li><a href="/index/index.html#calendar">CALENDAR</a></li>
+              <li><a href="/news/news.html">NEWS</a></li>
+         
+              <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+              <li><a href="/awards/awards.html">AWARDS</a></li>
+              <li>
+                <div class="dropdown">
+                  <a href="/index/index.html#comm">COMMITTEES</a>
+                  <div class="dropdown-content">
+                  <a href="/fundraising/fundraising.html">FUNDRAISING</a>
+                  <a href="/championship/champ.html">CHAMPIONSHIPS</a>
+                  <a href="/social/social.html">SOCIAL</a>
+                  <a href="/community/community.html">COMMUNITY SERVICE</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+              <li><a href="/memberPage/members.html">MEMBERS</a></li>
+            </ul>
+            <a href="/index/index.html" class="mobile-logoLink"><img
+                src="/header/SkillsLVTI.jpg"
+                class="SkillsLogo"
+                alt="SKILLS USA LOGO"
+                height={100}
+              />
+              </a>
+          </div>
           <a href="/index/index.html" class="logoLink"><img
               src="/header/SkillsLVTI.jpg"
               class="SkillsLogo"
@@ -53,6 +84,7 @@
             />
             </a>
         </div>
+        
         <div class="placeHolderDiv"></div>
   
         <ul class="appLogos">
@@ -95,52 +127,17 @@
           </section>
       </div>
       
-      <div class="committeesSection">
-
+      <div class="committeesSection" id="comm">
         <p class="NewsHeader">Committees<div class="rbLine"></div></p>
-      <secction class = "comittees" id ="comm">
-        <div class = "comittee" id = "championshipCom">
-          <div class = "backgroundImg" id = "chmpshpComBackImg"><h1 id = "join1">JOIN</h1></div>
-          <h2>Championship</h2>
-          <p class ="description" id = "chmpshpComDescript">
-      
-            Plan local school competitions. Help and advice students on SKills USA,
-         for District, State, and National competitions
-          </p>
-         </div>
-         
-
-         <div class = "comittee" id = "fundraisingCom">
-          <div class = "backgroundImg" id = "fundsComBackImg"><h1 id = "join2">JOIN</h1></div>
-          <h2>Fundraising</h2>
-          <p class ="description" id = "fundsComDescript">
-      
-            Help fundraise money, plan events, schedules, and many other things to raise money for our plans!
-          </p>
-         </div>
-         
-
-         <div class = "comittee" id = "communityCom">
-          <div class = "backgroundImg" id = "communityComBackImg"><h1 id = "join3">JOIN</h1></div>
-          <h2>Community-Service</h2>
-          <p class ="description" id = "communityComDescript">
-      
-            Join students together to help out the community, public funraisers for a good cause, fundraising for a public donation, etc.
-          </p>
-         </div>
-
-
-         <div class = "comittee" id = "communityCom">
-          <div class = "backgroundImg" id = "communityComBackImg"><h1 id = "join3">JOIN</h1></div>
-          <h2>Social Committee</h2>
-          <p class ="description" id = "communityComDescript">
-          Gather students to a fun event designed by you. 
+        <div class="comHold">
+          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">CHAMPIONSHIP</p><p class="descCom">Plan local school competitions. Help and advice students on SKills USA,
+            for District, State, and National competitions</p></div>
+          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">FUNDRAISING</p><p class="descCom">Help fundraise money, plan events, schedules, and many other things to raise money for our plans!</p></div>
+          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">COMMUNITY-SERVICE</p><p class="descCom">Join students together to help out the community, public funraisers for a good cause, fundraising for a public donation, etc.</p></div>
+          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">SOCIAL</p><p class="descCom">Gather students to a fun event designed by you. 
             Board games, video games, or simple hangouts!
-           Food is also a choice, its up to you.
-          </p>
-         </div>
-
-      </secction>
+           Food is also a choice, its up to you.</p></div>
+          </div>
 
       </div>
         
@@ -241,6 +238,7 @@
         // variable is obtained through document(html above) . querySelectorAll(grabs anything from html above, it has to be specified inside the "")
         const buttons = document.querySelectorAll("[data-carousel-button]")
         const PPP = document.getElementById("pp")
+        var pressed = false;
 
         //foreach button, if the button is clicked 
         buttons.forEach(button => {
@@ -250,6 +248,7 @@
             const slides = button
             .closest("[data-carousel]")
             .querySelector("[data-slides]")
+            pressed = true;
             
         const activeSlide = slides.querySelector("[data-active]")
         let newIndex = [...slides.children].indexOf(activeSlide) + offset
@@ -263,8 +262,15 @@
         });
 
         setInterval(function(){
-        PPP.click();
-        },6000);
+          if (pressed === false){
+            PPP.click();
+            pressed = true;
+          }
+        },500);
+
+        setInterval(function(){
+          pressed = false;
+        },6000)
 
         var memberImgs = ["/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg"]
         var news1 = ["SkillsUSA LVTI is able to raise 1 million dollars",
