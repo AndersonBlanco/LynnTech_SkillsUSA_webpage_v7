@@ -289,3 +289,84 @@ body {
   list-style-type:georgian; 
 
 }
+@media only screen and (max-width: 600px){
+  a { text-decoration: none;
+    color:#000000;
+     }
+    /*header menu*/
+    .headerMob{
+      background-color: #fff;
+      display: block;
+      z-index: 2;
+    }
+    .header{
+      display: none;
+    }
+    /*beginning of burger menu*/
+      .burger-menu-list {
+        list-style: none;
+        display: none;
+        text-align: left;
+        position: relative;
+      }
+      .burger-menu-list.show {
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left:0;
+        z-index: 4;
+        width: 100%;
+      }
+      .burger-menu-icon{
+        height: 50px;
+        width: 70px;
+        padding-left: 20px ;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        padding-top: 10px;
+      }
+      .burger-menu-list li {
+        background-color: rgb(255, 255, 255);
+        padding-left: 10px;
+        padding-top:  10px;
+        padding-bottom: 10px;
+        font-weight: 500;
+        position: relative;
+      }
+    .burger-menu-list li:hover{
+        background-color: #83b0b8;
+    }
+    /*end of burger menu*/
+    /*logo*/
+    .skillsLogo{
+      height: 70px;
+      
+    }
+    /*end of header*/
+    .appLogos{
+      display: none;
+    }
+    .HeaderSeparator{
+      height: 20px;
+      width: 100vw;
+      background-color: #f57076;
+      position: relative;
+      z-index: 3;
+    }
+    .MembersList{
+      padding-left: 0px;
+    }
+    .bubbleThing{
+      width: 80vw;
+      height: 40vh;
+      margin-left: 0;
+    }
+    .email{
+      position: relative;
+      z-index: 30 !important;
+      color: #000000;
+      
+    }
+  }

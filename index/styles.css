@@ -348,6 +348,8 @@ body {
   .bubbleThingHolder{
     list-style: none;
     display: inline;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .MemberList{
   margin: 0;
@@ -931,7 +933,6 @@ cursor: pointer;
     /*logo*/
     .skillsLogo{
       height: 70px;
-      padding-left: 10px;
     }
     /*end of header*/
 
@@ -992,6 +993,10 @@ cursor: pointer;
       text-align: center;
       padding-left: 0;
     }
+    .bubbleThingHolder{
+      margin-left: 0px;
+    margin-right: 0px;
+    }
     .bubbleThing{
       width: 80vw;
       height: 450px;
@@ -1011,7 +1016,7 @@ cursor: pointer;
       height: 65vh;
       width: 100vw;
     }
-    #div1{
+    #div0{
       display: none;
     }
     .appLogos{
