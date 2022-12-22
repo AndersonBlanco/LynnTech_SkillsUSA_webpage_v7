@@ -75,7 +75,7 @@
 
 
 <div id = "chapterAwards" class = "chapterAwards">
-      <h1 id = "CA_title">Chapter Awards  <legend> &#11205;</legend> </h1>
+      <h1 id = "CA_title">Chapter Awards <legend>&#9701;</legend> </h1>
       <ul id = "CA_list" class ="dropDown">
         <div>
         <p class="headerAwards">2022 Lynn Tech Nationals Best Chapter Award.</p>
@@ -101,7 +101,7 @@
     </div>
 
   <div id = "membersAwards" class = "membersAwards">
-      <h1 id = "MA_title">Members Awards <legend> &#11205;</legend> </h1>
+      <h1 id = "MA_title">Members Awards <legend> 	&#9701;</legend> </h1>
       <div>
       <ul id = "MA_list" class ="dropDown">
         <div>
@@ -129,7 +129,7 @@
     </div>
 
   <div id = "teachersAwards" class = "teachersAwards">
-      <h1 id = "TA_title">Teachers Awards <legend> &#11205;</legend> </h1>
+      <h1 id = "TA_title">Teachers Awards <legend>	&#9701;</legend> </h1>
       <ul id = "TA_list" class ="dropDown">
         <div>
         <p class="headerAwards">2022 Lynn Tech Nationals Best Chapter Award.</p>
@@ -193,12 +193,12 @@
              document.getElementById("CA_list").style.height = "0rem"; 
     
              CA_toggle = !CA_toggle;  
-             $("#CA_title legend").css("transform", "rotateZ(0deg)"); 
+             $("#CA_title legend").css("transform", `rotateZ(${90/2}deg)`); 
           }else{
             document.getElementById("CA_list").style.height = `${childrenHeights+19}px`;  
             CA_toggle = !CA_toggle;          
             
-            $("#CA_title legend").css("transform", "rotateZ(-180deg)"); 
+            $("#CA_title legend").css("transform", `rotateZ(${90*1.5}deg)`); 
           }
       }catch(e){
         alert(e);
@@ -218,12 +218,17 @@
              document.getElementById("MA_list").style.height = "0rem"; 
              MA_toggle = !MA_toggle;  
 
-             $("#MA_title legend").css("transform", "rotateZ(0deg)");
+             //$("#MA_title legend").css("transform", "rotateZ(0deg)");
+
+             $("#MA_title legend").css("transform", `rotateZ(${90/2}deg)`); 
+
           }else{
             document.getElementById("MA_list").style.height = `${childrenHeights+19}px`;  
             MA_toggle = !MA_toggle; 
 
-            $("#MA_title legend").css("transform", "rotateZ(-180deg)");
+            //$("#MA_title legend").css("transform", "rotateZ(-180deg)");
+
+            $("#MA_title legend").css("transform", `rotateZ(${90*1.5}deg)`); 
           }
       }catch(e){
         alert(e);
@@ -243,12 +248,14 @@
              document.getElementById("TA_list").style.height = "0rem"; 
              TA_toggle = !TA_toggle;  
 
-             $("#TA_title legend").css("transform", "rotateZ(0deg)");
+             //$("#TA_title legend").css("transform", "rotateZ(0deg)");
+             $("#TA_title legend").css("transform", `rotateZ(${90/2}deg)`); 
           }else{
             document.getElementById("TA_list").style.height =`${childrenHeights+19}px`;  
             TA_toggle = !TA_toggle; 
 
-            $("#TA_title legend").css("transform", "rotateZ(-180deg)");
+            //$("#TA_title legend").css("transform", "rotateZ(-180deg)");
+            $("#TA_title legend").css("transform", `rotateZ(${90*1.5}deg)`); 
           }
       }catch(e){
         alert(e);

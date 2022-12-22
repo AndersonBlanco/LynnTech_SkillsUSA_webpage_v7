@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     
     <title>Document</title>
-</head>
-<body>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <script src="index.js" defer></script>
         <link
@@ -23,124 +21,50 @@
         />
         <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" 
         rel="stylesheet"/>
-        <div class="headerMob">
-          <div class="burger-menu">
-            <div class="burger-menu-icon" onclick="toggleMenu()">
-              <img src="burger.svg">
-            </div>
-          </div>
-          <img src="/header/SkillsLVTI.jpg" class="skillsLogo">
-          <ul class="burger-menu-list">
-            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
-            <li><a href="/mobileTest/mob.html">MEMBERS</a></li>
-            <li><a href="/donate/donate.html">DONATE</a></li>
-            <li><a href="/index/index.html#calendar">CALENDAR</a></li>
-            <li><a href="/news/news.html">NEWS</a></li>
-            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
-            <li><a href="/awards/awards.html">AWARDS</a></li>
-            <li><a href="/fundraising/fundraising.html">FUNDRAISING</a></li>
-            <li><a href="/championship/champ.html">CHAMPIONSHIPS</a></li>
-            <li><a href="/social/social.html">SOCIAL</a></li>
-            <li><a href="/community/community.html">COMMUNITY SERVICE</a></li>
-          </ul>
-        </div>
-        <div class="header">
-          <ul class="headerLinks" >
-            <li><a href="/donate/donate.html">DONATE</a></li>
-            <li><a href="/index/index.html#calendar">CALENDAR</a></li>
-            <li><a href="/news/news.html">NEWS</a></li>
-       
-            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
-            <li><a href="/awards/awards.html">AWARDS</a></li>
-            <li>
-              <div class="dropdown">
-                <a href="/index/index.html#comm">COMMITTEES</a>
-                <div class="dropdown-content">
-                <a href="/fundraising/fundraising.html">FUNDRAISING</a>
-                <a href="/championship/champ.html">CHAMPIONSHIPS</a>
-                <a href="/social/social.html">SOCIAL</a>
-                <a href="/community/community.html">COMMUNITY SERVICE</a>
-                </div>
-              </div>
-            </li>
-            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
-            <li><a href="/memberPage/members.html">MEMBERS</a></li>
-          </ul>
-            <div class="mobile-dropdown">
-              <p>ppppppp</p>
-            <ul class="mobile-dropdown-content" >
-              <li><a href="/donate/donate.html">DONATE</a></li>
-              <li><a href="/index/index.html#calendar">CALENDAR</a></li>
-              <li><a href="/news/news.html">NEWS</a></li>
-         
-              <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
-              <li><a href="/awards/awards.html">AWARDS</a></li>
-              <li>
-                <div class="dropdown">
-                  <a href="/index/index.html#comm">COMMITTEES</a>
-                  <div class="dropdown-content">
-                  <a href="/fundraising/fundraising.html">FUNDRAISING</a>
-                  <a href="/championship/champ.html">CHAMPIONSHIPS</a>
-                  <a href="/social/social.html">SOCIAL</a>
-                  <a href="/community/community.html">COMMUNITY SERVICE</a>
-                  </div>
-                </div>
-              </li>
-              <li><a href="/contactUs/contact.html">CONTACT US</a></li>
-              <li><a href="/memberPage/members.html">MEMBERS</a></li>
-            </ul>
-            <a href="/index/index.html" class="mobile-logoLink"><img
-                src="/header/SkillsLVTI.jpg"
-                class="SkillsLogo"
-                alt="SKILLS USA LOGO"
-                height={100}
-              />
-              </a>
-          </div>
-          <a href="/index/index.html" class="logoLink"><img
-              src="/header/SkillsLVTI.jpg"
-              class="SkillsLogo"
-              alt="SKILLS USA LOGO"
-              height={100}
-            />
-            </a>
-        </div>
-        
-        <div class="placeHolderDiv"></div>
-  
+</head>
+
+<body>
+
+<!--Header container-->
+  <header class = "header" id = "header"></header>
+
         <ul class="appLogos">
           <li><img src ="/header/youtube.png" id="yt" /></li>
           <li><img src ="/header/fb.png" id="facebook"/></li>
           <li><img src ="/header/insta.png" id="insta" /></li>
         </ul>
 
-        <div class="blueFilter"></div>
+       <!-- <div class="blueFilter"></div> -->
         <div class="slider">
           <section aria-label="Newest Photos">
             <div class="carousel" data-carousel>
               <button class="carousel-button prev" data-carousel-button id="pp">&#60;</button>
               <button class="carousel-button next" data-carousel-button>&#62;</button>
               <ul data-slides>
-                <li class="slide" data-active>
-                  <img src="skillsSliding1.jpg" class="picturesTop" alt="Retro MC">
+
+
+                <li class="slide" data-active id = "slide1">
+              <!--  <img src="skillsSliding1.jpg" class="picturesTop" alt="Retro MC"> -->
                   <div class="descHolders">
                   <p class="picturesDesc">Lynn Tech brings home 6 medals after winning 3 competitions at Atlanta!</p>
                   <p class="picturesDesc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                 </li>
-                <li class="slide">
-                  <img src="skillsSliding2.jpg" class="picturesTop" alt="Retro MC2">
+                <li class="slide" id = "slide2">
+                 <!-- <img src="skillsSliding2.jpg" class="picturesTop" alt="Retro MC2">-->
                   <div class="descHolders">
                   <p class="picturesDesc">Lorem ipsum dolor sit amet!</p>
                   <p class="picturesDesc2">Orci nulla pellentesque dignissim enim sit amet venenatis urna. Amet est placerat in egestas erat. Consequat semper viverra nam libero justo. Tincidunt arcu non sodales neque sodales ut etiam sit. Nulla porttitor massa id neque aliquam.</p>   
                   </div>                   
                 </li>
-                <li class="slide">
-                  <img src="skillsSliding.jpg" class="picturesTop" alt="Retro MC3">
+                <li class="slide" id = "slide3">
+                  <!--<img src="skillsSliding.jpg" class="picturesTop" alt="Retro MC3">-->
                   <div class="descHolders">
                   <p class="picturesDesc"> consectetur adipiscing elit!</p>
                   <p class="picturesDesc2">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet. Euismod in pellentesque massa placerat duis ultricies lacus. Eget magna fermentum iaculis eu non.  </p>
                   </div>
+
+
                 </li>
                 
               </ul>
@@ -238,23 +162,15 @@
         <p class="TitleCalendar">Our Calendar<div class="brLineCalendar"></div></p>
         <iframe class="Calendar"src="https://calendar.google.com/calendar/embed?height=900&wkst=1&bgcolor=%233F51B5&ctz=America%2FNew_York&showNav=1&showDate=1&showPrint=1&showTabs=1&showTz=0&showCalendars=1&title=SkillsUSA%20Lynn%20Tech%20Calendar&src=YWFkNzM5NzZlYTgyMzRlYjNiZjhlOTk1MzI4ZmNmZjVhN2UwNDY4OWNmZTI3NzViNWFiODk1ZDkzNTgwYzY2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border:solid 1px #777" width="1600" height="900" frameborder="0" scrolling="no"></iframe>
       </div>
-      <div class="footer">
-      <div class="partnerSection">
-        <p class="partnerHeader">Business Partners</p>
-        <div class="partnerImgHldr">
-          <ul class="partnerImg">
-            <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
-            <li><img src="/index/partnerLogo/bizLogo3.png" id="morg"></li>
-            <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyrightSection">
-        <p>
-          © 2022 SkillsUSA LVTI, Inc.
-        </p>
-      </div>
-    </div>
+
+       
+       <!--Footer containe r-->
+       <footer class = "footer" id= "footer"></footer>
+
+
+       <!--JQUERY -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   
       <script>
         // variable is obtained through document(html above) . querySelectorAll(grabs anything from html above, it has to be specified inside the "")
         const buttons = document.querySelectorAll("[data-carousel-button]")
@@ -383,6 +299,19 @@
         var menu = document.querySelector('.burger-menu-list');
         menu.classList.toggle('show');
         }
+
+
+
+
+        //jquery backend load header and footer content:
+        $(function(){
+          $("#header").load("../responsiveHeader.html"); 
+          $("#footer").load("../footer.html");
+        });
+
+
+
+
       </script>
 </body>
 </html>

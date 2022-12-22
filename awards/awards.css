@@ -347,7 +347,7 @@ footer{
 .chapterAwards, .membersAwards, .teachersAwards{
   background-color: transparent; 
   font-size: .7rem; 
-   transition-duration: 1s;
+   transition-duration: .5s;
    text-align: left;
    align-items: center;
    justify-content: center; 
@@ -355,7 +355,7 @@ footer{
 
 .chapterAwards h1, .membersAwards h1, .teachersAwards h1{
   color: black; 
-  transition-duration: 1s;
+  transition-duration: .5s;
   cursor: pointer; 
   display: flex;
   flex-direction: row;
@@ -363,7 +363,9 @@ footer{
 }
 
 legend{
-  transition-duration: 1s;
+  transition-duration: .5s;
+  transform: rotateZ(45deg); 
+  margin-left: -.5rem;
 }
 
 

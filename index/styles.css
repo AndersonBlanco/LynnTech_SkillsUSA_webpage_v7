@@ -61,6 +61,8 @@ body {
   padding: 5px;
   text-decoration: none;
   background-color: #ffffff;
+  border-width: 1rem;
+  border-color: gray;
 }
 .dropdown-content a:hover {
   color: #FFFFFF !important;
@@ -163,7 +165,7 @@ body {
     top: 0px;
     height: 100%;
     width: 100vw;
-    
+   /*  background-color: rgba(0, 0, 0, .5); */ 
   }
   .picturesDesc{
     font-family: 'Hind Siliguri', sans-serif;
@@ -287,7 +289,7 @@ body {
   .NewsSection{
     width: 100%;
     padding-bottom: 0px;
-    background-color: rgb(235, 235, 235);
+    /* background-color: rgb(235, 235, 235); */ 
   }
   .NewsArea{
 
@@ -1073,3 +1075,41 @@ cursor: pointer;
     
 
 
+
+
+/* Slides {li{ background images test with blend mode for better text def */
+  #slide1{
+    background-image: url("./skillsSliding1.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(0, 61, 228, .5);
+    background-repeat: no-repeat;
+    background-position: top; 
+          background-size: cover;
+  }
+
+  #slide2{
+    background-image: url("./skillsSliding2.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(0, 61, 228, .5);
+  background-repeat: no-repeat;
+    background-position: top; 
+       background-size: cover;
+  }
+
+  #slide3{
+    background-image: url("./skillsSliding.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(0, 61, 228, .5);
+  background-repeat: no-repeat;
+    background-position: center;
+  
+    background-size: cover;
+  }
+
+  #slide4{
+    background-image: url("./skillsFramework.png");
+    background-blend-mode: overlay;
+    background-color: rgb(0, 61, 228, .5);
+  background-repeat: no-repeat;
+    background-position: center;
+  }
