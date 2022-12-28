@@ -3,6 +3,7 @@ html {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 body {
   margin: 0;
@@ -11,10 +12,6 @@ body {
 }
 .headerMob{
   display: none;
-}
-
-html, body{
-  font-size: 16px; 
 }
 .header {
   justify-content: center;
@@ -65,8 +62,6 @@ html, body{
   padding: 5px;
   text-decoration: none;
   background-color: #ffffff;
-  border-width: 1rem;
-  border-color: gray;
 }
 .dropdown-content a:hover {
   color: #FFFFFF !important;
@@ -127,8 +122,8 @@ html, body{
   
   .carousel {
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 50rem;
     position: relative;
   }
   
@@ -138,7 +133,9 @@ html, body{
     list-style: none;
   }
   .picturesTop{
-    opacity: .8;
+    opacity: 1;
+    filter: brightness(65%)
+
   }
   
   .slide {
@@ -159,7 +156,7 @@ html, body{
   }
   
   .slide[data-active] {
-    opacity: .8;
+    opacity: 1;
     z-index: 1;
     transition-delay: 0ms;
   }
@@ -169,7 +166,7 @@ html, body{
     top: 0px;
     height: 100%;
     width: 100vw;
-   /*  background-color: rgba(0, 0, 0, .5); */ 
+    
   }
   .picturesDesc{
     font-family: 'Hind Siliguri', sans-serif;
@@ -206,7 +203,7 @@ html, body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(10, 44, 107); 
+    background-color: rgba(10, 44, 107, 0); 
   }
   
   .carousel-button {
@@ -293,7 +290,7 @@ html, body{
   .NewsSection{
     width: 100%;
     padding-bottom: 0px;
-    /* background-color: rgb(235, 235, 235); */ 
+    background-color: rgb(235, 235, 235);
   }
   .NewsArea{
 
@@ -307,8 +304,8 @@ html, body{
   .rbLine{
     position: relative;
     top: -36px;
-    margin-left: 42.5%;
-    width: 15%;
+    margin: auto;
+    width: 220px;
     height: 3px;
     background: linear-gradient(to left, #f57076, #94cbf9 100%);
     background-position: 0 100%;
@@ -316,10 +313,10 @@ html, body{
     background-repeat: repeat-x;
   }
   .rbLineSpot{
-    margin: auto;
     position: relative;
+    margin-left:2rem;
     top: -30px;
-    width: 200px;
+    width: 185px;
     height: 3px;
     background: linear-gradient(to left, #f57076, #94cbf9 100%);
     background-position: 0 100%;
@@ -331,9 +328,9 @@ html, body{
 
     position: relative;
     top: -36px;
-    margin-left: 20%;
-    width: 60%;
     height: 3px;
+    width: 215px;
+    margin: auto;
     background: linear-gradient(to left, #f57076, #94cbf9 100%);
     background-position: 0 100%;
     background-size: 100% 3px;
@@ -342,8 +339,8 @@ html, body{
   .brLineCalendar{
     position: relative;
     top: -36px;
-    margin-left: 30%;
-    width: 40%;
+    margin: auto;
+    width: 250px;
     height: 3px;
     background: linear-gradient(to left, #f57076, #94cbf9 100%);
     background-position: 0 100%;
@@ -365,12 +362,13 @@ html, body{
   display: inline-block;
   height: 470px;
   width: 550px;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   margin-top: 2rem;
   border-radius: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 150px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   transition: box-shadow 0.2s ease-in-out;
+  background-color: white;
 }
 
 .bubbleThing:hover{
@@ -379,28 +377,27 @@ html, body{
 
 
 .profileImg{
-  height: 300;
+  height: 40%;
   width: inherit;
   display: block;
   object-fit: cover;
-  border-radius: inherit;
-  padding-bottom: 30px;
+  
 }
 .bubbleThing2{
 
-  top: -100px;
+  top: 0;
   background-color: white;
   position: relative;
-  width: inherit;
-  height: 250px;
+  height: 45%;
+  
 }
 .memberName{
   position: relative;
   font-size: 20px;
-  top: 20px;
+  top: 22px;
   color: rgb(0, 0, 0);
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .newsDescription{
@@ -434,7 +431,7 @@ html, body{
 }
 .seeMoreLink{
   position: absolute;
-  bottom: -30px;
+  bottom: -80px;
   right: 10px;
   color: rgb(39, 39, 39);
   text-decoration-line: none;
@@ -756,7 +753,7 @@ cursor: pointer;
       bottom: -50%;
       opacity: 0; 
     
-      transition-duration: 1s;
+      transition-duration: .5s;
     }
     
     
@@ -779,29 +776,30 @@ cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
-      
       gap: 5vw;
+      flex-wrap: wrap;
     }
     .comObj{
-      height: 37vh;
-      width: 18vw;
+      height: 500px;
+      width: 400px;
       background-color: #fff;
     }
     .comObj:hover > img{
       filter: brightness(50%)
     }
-    .comObj > .join{
+    .join{
       opacity: 0;
       transition-duration: .5;
       position: relative;
-      top: -15vh;
-      font-size: 2.3vw;
-      color: white;
+      text-align: center;
+      width: inherit;
+      top: -140px;
+      font-size: 45px;
+      color: rgb(255, 255, 255);
       font-weight: 700;
     }
     .comObj:hover > .join{
       opacity: 1;
-      transition-duration: 1s;
     }
     .comObj img{
       filter: brightness(100%);
@@ -815,18 +813,19 @@ cursor: pointer;
     }
     .headerCom{
       position: relative;
-      top: -13vh;
       margin: 0;
+      top: -30px;
       font-weight: 800;
-      font-size: 1.4vw;
+      font-size: 30px;
     }
     .descCom{
-      top: -13vh;
+
       position: relative;
       font-weight: 500;
-      font-size: 1vw;
+      font-size: 24px;
       margin-left: 10px;
       margin-right: 10px;
+      top: -30px;
     }
 /*NEW SEC*/
 
@@ -888,14 +887,21 @@ cursor: pointer;
 
 
 @media only screen and (max-width: 600px){
+  html{
+    letter-spacing: -1.8px;
+  }
   a { text-decoration: none;
     color:#000000;
+    letter-spacing: -1px;
      }
     /*header menu*/
     .headerMob{
       background-color: #fff;
       display: block;
-      z-index: 2;
+      z-index: 5;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
     }
     .header{
       display: none;
@@ -906,14 +912,16 @@ cursor: pointer;
         display: none;
         text-align: left;
         position: relative;
+        padding: none;
       }
       .burger-menu-list.show {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 0;
         position: absolute;
         left:0;
-        z-index: 2;
+        z-index: 4;
         width: 100%;
       }
       .burger-menu-icon{
@@ -924,6 +932,7 @@ cursor: pointer;
         position: absolute;
         right: 0;
         padding-top: 10px;
+        font-size: 0;
       }
       .burger-menu-list li {
         background-color: rgb(255, 255, 255);
@@ -932,9 +941,40 @@ cursor: pointer;
         padding-bottom: 10px;
         font-weight: 500;
         position: relative;
+        font-size: 16px;
       }
+      .burger-menu-list a{
+        /*display: block;**/
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: -4px;
+      }
+      .burger-menu-list {
+        box-shadow: 0 5px 6px -6px rgb(0, 0, 0);
+        position: relative;
+      }
+
     .burger-menu-list li:hover{
         background-color: #83b0b8;
+    }
+    /*end of burger menu*/
+    /*logo*/
+    .skillsLogo{
+      height: 70px;
+      
+    }
+    /*end of header*/
+    .appLogos{
+      display: none;
+    }
+    .HeaderSeparator{
+      height: 20px;
+      width: 100vw;
+      background-color: #f57076;
+      position: relative;
+      z-index: 3;
     }
     /*end of burger menu*/
     /*logo*/
@@ -954,6 +994,7 @@ cursor: pointer;
     }
     .slide{
       box-shadow: 0 0 0 0;
+      letter-spacing: -.8px;
     }
     .picturesDesc{
       top: 5%;
@@ -968,11 +1009,11 @@ cursor: pointer;
     .comHold{
       flex-direction: column;
     }
-    .comObj{
-      width: 80vw;
-    }
     .committeesSection{
       display: none;
+    }
+    .spotlight{
+      height: 30rem;
     }
     .spotlightImgHolder{
       display: none;
@@ -999,6 +1040,7 @@ cursor: pointer;
     .spotlightWords2{
       text-align: center;
       padding-left: 0;
+      letter-spacing: -3px;
     }
     .bubbleThingHolder{
       margin-left: 0px;
@@ -1008,26 +1050,43 @@ cursor: pointer;
       width: 80vw;
       height: 450px;
       background-color: #fff;
+      margin-bottom: 30px;
     }
     .bubbleThing2{
-      height: 300px;
+      height: 210px;
+      letter-spacing: -1px;
     }
     .memberName{
       font-weight: 700;
     }
+    .seeMoreLink{
+      letter-spacing: 0px;
+      bottom: -70px;
+    }
+    .newsDescription{
+      font-size: 4.3vw;
+    }
+  
     .Calendar{
       width: 90vw;
-      height: 48vh;
+      height: 25rem;
     }
+
     .calendarSection{
       height: 65vh;
-      width: 100vw;
+      height: 35rem
     }
     #div0{
       display: none;
     }
     .appLogos{
       display: none;
+    }
+    .rbLineSpot{
+      margin: auto;
+    }
+    .partnerImg{
+      padding: 0;
     }
 }
 
@@ -1085,51 +1144,3 @@ cursor: pointer;
     
 
 
-
-
-/* Slides {li{ background images test with blend mode for better text def */
-  #slide1{
-    background-image: url("./skillsSliding1.jpg");
-    background-blend-mode: overlay;
-    background-color: rgb(0, 61, 228, .5);
-    background-repeat: no-repeat;
-    background-position: top; 
-          background-size: cover;
-  }
-
-  #slide2{
-    background-image: url("./skillsSliding2.jpg");
-    background-blend-mode: overlay;
-    background-color: rgb(0, 61, 228, .5);
-  background-repeat: no-repeat;
-    background-position: top; 
-       background-size: cover;
-  }
-
-  #slide3{
-    background-image: url("./skillsSliding.jpg");
-    background-blend-mode: overlay;
-    background-color: rgb(0, 61, 228, .5);
-  background-repeat: no-repeat;
-    background-position: center;
-  
-    background-size: cover;
-  }
-
-  #slide4{
-    background-image: url("./skillsFramework.png");
-    background-blend-mode: overlay;
-    background-color: rgb(0, 61, 228, .5);
-  background-repeat: no-repeat;
-    background-position: center;
-  }
-
-
-
-
-
-
-
-
-  /* prevention of mobile assets displaying on desktop view */
-  

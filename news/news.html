@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f1f1f">
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="news.css">
     <title>Document</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+
+    <div class="App">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <script src="index.js" defer></script>
         <link
@@ -20,13 +25,56 @@
         />
         <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" 
         rel="stylesheet"/>
-</head>
-<body>
-
-    <div class="App">
-        
-    <header class = "header" id = "header"></header>
-
+        <div class="headerMob">
+          <div class="burger-menu">
+            <div class="burger-menu-icon" onclick="toggleMenu()">
+              <img src="/index/burger.svg">
+            </div>
+          </div>
+          <a href="/index/index.html"><img src="/header/SkillsLVTI.jpg" class="skillsLogo"></a>
+          <div class="burger-menu-list">
+            <a href="/contactUs/contact.html">CONTACT US</a>
+            <a href="/memberPage/members.html">MEMBERS</a>
+            <a href="/donate/donate.html">DONATE</a>
+            <a href="/index/index.html#calendar">CALENDAR</a>
+            <a href="/news/news.html">NEWS</a>
+            <a href="/aboutUs/aboutUs.html">ABOUT US</a>
+            <a href="/awards/awards.html">AWARDS</a>
+            <a href="/fundraising/fundraising.html">FUNDRAISING</a>
+            <a href="/championship/champ.html">CHAMPIONSHIPS</a><a href="/social/social.html">SOCIAL</a><a href="/community/community.html">COMMUNITY SERVICE</a>
+            
+          </div>
+          <div class="HeaderSeparator"></div>
+        </div>
+        <div class="header">
+          <ul class="headerLinks">
+            <li><a href="/donate/donate.html">DONATE</a></li>
+            <li><a href="/index/index.html#calendar">CALENDAR</a></li>
+            <li><a href="/news/news.html">NEWS</a></li>
+            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+            <li><a href="/awards/awards.html">AWARDS</a></li>
+            <li>
+            <div class="dropdown">
+              <a href="/index/index.html#comm">COMMITTEES</a>
+              <div class="dropdown-content">
+                <a href="/fundraising/fundraising.html">FUNDRAISING</a>
+                <a href="/championship/champ.html">CHAMPIONSHIPS</a>
+                <a href="/social/social.html">SOCIAL</a>
+                <a href="/community/community.html">COMMUNITY SERVICE</a>
+              </div>
+            </div>
+            </li>
+            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+            <li><a href="/memberPage/members.html">MEMBERS</a></li>
+          </ul>
+          <a href="/index/index.html" class="logoLink"><img
+              src="/header/SkillsLVTI.jpg"
+              class="SkillsLogo"
+              alt="SKILLS USA LOGO"
+              height={100}
+            />
+            </a>
+        </div>
         <ul class="appLogos">
           <li><img src ="/header/youtube.png" id="yt" /></li>
           <li><img src ="/header/fb.png" id="facebook"/></li>
@@ -40,14 +88,23 @@
             </div>
           </div>
 
-
-         <!--Footer containe r-->
-         <footer class = "footer" id= "footer"></footer>
-
-
-         <!--JQUERY -->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-     
+          <div class="footer">
+            <div class="partnerSection">
+              <p class="partnerHeader">Business Partners</p>
+              <div class="partnerImgHldr">
+                <ul class="partnerImg">
+                  <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+                  <li><img src="/index/partnerLogo/bizLogo3.png" id="morg"></li>
+                  <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="copyrightSection">
+              <p>
+                © 2022 SkillsUSA LVTI, Inc.
+              </p>
+            </div>
+          </div>
     </div>
     <script>
                 var memberImgs = ["/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg"
@@ -97,11 +154,18 @@
             var currentMember = members[i]
             console.log(currentMember, i)
             //INDEX!!! INDEX!!!//
+
+        var link = document.createElement("a");
+        link.href = "https://www.youtube.com/watch?v=BIZz4A39rT4&ab_channel=JUSTPlaylist"
+        link.className = "link";
+        link.id = "link" + i
+        document.getElementById("NewsArea").appendChild(link);
+
         var list = document.createElement('li');
         list.id = 'list'+i;
         list.className = 'bubbleThingHolder';
         document.body.appendChild(list);
-        document.getElementById("NewsArea").appendChild(list);
+        document.getElementById("link"+i).appendChild(list);
           //
         var div = document.createElement('div');
         div.id = 'div'+i;
@@ -140,34 +204,17 @@
         var element = document.getElementById('bottomBubble'+i);
         element.appendChild(description);
 
-
         var article = document.createElement("a")
         article.id = "arti" + i;
         article.className = "linkButton"
         article.href = currentMember[2]
         var element = document.getElementById('bottomBubble'+i);
         element.appendChild(article);
-
-
-        var btn = document.createElement("button");
-        btn.innerHTML = "Read More";
-        btn.id = "butt"+i;
-        btn.className = "newsBlockButt";
-        var element = document.getElementById('arti'+i);
-        element.appendChild(btn)
-
         }
-
-
-       //jquery backend load header and footer content:
-       $(function(){
-          $("#header").load("../desktopHeader.html"); 
-          $("#footer").load("../footer.html");
-        });
-
-
-
-      
+        function toggleMenu() {
+        var menu = document.querySelector('.burger-menu-list');
+        menu.classList.toggle('show');
+        }
     </script>
 </body>
 </html>

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f1f1f">
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../global.css">
     
     <title>Document</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <script src="index.js" defer></script>
         <link
@@ -22,69 +25,142 @@
         />
         <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" 
         rel="stylesheet"/>
+        <div class="headerMob">
+          <div class="burger-menu">
+            <div class="burger-menu-icon" onclick="toggleMenu()">
+              <img src="burger.svg">
+            </div>
+          </div>
+          <a href="/index/index.html"><img src="/header/SkillsLVTI.jpg" class="skillsLogo"></a>
+          <div class="burger-menu-list">
+            <a href="/contactUs/contact.html">CONTACT US</a>
+            <a href="/memberPage/members.html">MEMBERS</a>
+            <a href="/donate/donate.html">DONATE</a>
+            <a href="/index/index.html#calendar">CALENDAR</a>
+            <a href="/news/news.html">NEWS</a>
+            <a href="/aboutUs/aboutUs.html">ABOUT US</a>
+            <a href="/awards/awards.html">AWARDS</a>
+            <a href="/fundraising/fundraising.html">FUNDRAISING</a>
+            <a href="/championship/champ.html">CHAMPIONSHIPS</a><a href="/social/social.html">SOCIAL</a><a href="/community/community.html">COMMUNITY SERVICE</a>
+            
+          </div>
+          
+        </div>
+        <div class="header">
+          <ul class="headerLinks" >
+            <li><a href="/donate/donate.html">DONATE</a></li>
+            <li><a href="/index/index.html#calendar">CALENDAR</a></li>
+            <li><a href="/news/news.html">NEWS</a></li>
+       
+            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+            <li><a href="/awards/awards.html">AWARDS</a></li>
+            <li>
+              <div class="dropdown">
+                <a href="/index/index.html#comm">COMMITTEES</a>
+                <div class="dropdown-content">
+                <a href="/fundraising/fundraising.html">FUNDRAISING</a>
+                <a href="/championship/champ.html">CHAMPIONSHIPS</a>
+                <a href="/social/social.html">SOCIAL</a>
+                <a href="/community/community.html">COMMUNITY SERVICE</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+            <li><a href="/memberPage/members.html">MEMBERS</a></li>
+          </ul>
+            <div class="mobile-dropdown">
+              <p>ppppppp</p>
+            <ul class="mobile-dropdown-content" >
+              <li><a href="/donate/donate.html">DONATE</a></li>
+              <li><a href="/index/index.html#calendar">CALENDAR</a></li>
+              <li><a href="/news/news.html">NEWS</a></li>
+         
+              <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+              <li><a href="/awards/awards.html">AWARDS</a></li>
+              <li>
+                <div class="dropdown">
+                  <a href="/index/index.html#comm">COMMITTEES</a>
+                  <div class="dropdown-content">
+                  <a href="/fundraising/fundraising.html">FUNDRAISING</a>
+                  <a href="/championship/champ.html">CHAMPIONSHIPS</a>
+                  <a href="/social/social.html">SOCIAL</a>
+                  <a href="/community/community.html">COMMUNITY SERVICE</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+              <li><a href="/memberPage/members.html">MEMBERS</a></li>
+            </ul>
+            <a href="/index/index.html" class="mobile-logoLink"><img
+                src="/header/SkillsLVTI.jpg"
+                class="SkillsLogo"
+                alt="SKILLS USA LOGO"
+                height={100}
+              />
+              </a>
+          </div>
+          <a href="/index/index.html" class="logoLink"><img
+              src="/header/SkillsLVTI.jpg"
+              class="SkillsLogo"
+              alt="SKILLS USA LOGO"
+              height={100}
+            />
+            </a>
+        </div>
         
-</head>
-
-<body>
-
-<!--Header container-->
-  <header class = "header" id = "header"></header>
-
+        <div class="placeHolderDiv"></div>
+  
         <ul class="appLogos">
           <li><img src ="/header/youtube.png" id="yt" /></li>
           <li><img src ="/header/fb.png" id="facebook"/></li>
           <li><img src ="/header/insta.png" id="insta" /></li>
         </ul>
 
-       <!-- <div class="blueFilter"></div> -->
+        <div class="blueFilter"></div>
         <div class="slider">
           <section aria-label="Newest Photos">
             <div class="carousel" data-carousel>
               <button class="carousel-button prev" data-carousel-button id="pp">&#60;</button>
               <button class="carousel-button next" data-carousel-button>&#62;</button>
               <ul data-slides>
-
-
-                <li class="slide" data-active id = "slide1">
-              <!--  <img src="skillsSliding1.jpg" class="picturesTop" alt="Retro MC"> -->
+                <li class="slide" data-active>
+                  <img src="skillsSliding1.jpg" class="picturesTop" alt="Retro MC">
                   <div class="descHolders">
                   <p class="picturesDesc">Lynn Tech brings home 6 medals after winning 3 competitions at Atlanta!</p>
                   <p class="picturesDesc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
                 </li>
-                <li class="slide" id = "slide2">
-                 <!-- <img src="skillsSliding2.jpg" class="picturesTop" alt="Retro MC2">-->
+                <li class="slide">
+                  <img src="skillsSliding2.jpg" class="picturesTop" alt="Retro MC2">
                   <div class="descHolders">
                   <p class="picturesDesc">Lorem ipsum dolor sit amet!</p>
                   <p class="picturesDesc2">Orci nulla pellentesque dignissim enim sit amet venenatis urna. Amet est placerat in egestas erat. Consequat semper viverra nam libero justo. Tincidunt arcu non sodales neque sodales ut etiam sit. Nulla porttitor massa id neque aliquam.</p>   
                   </div>                   
                 </li>
-                <li class="slide" id = "slide3">
-                  <!--<img src="skillsSliding.jpg" class="picturesTop" alt="Retro MC3">-->
+                <li class="slide">
+                  <img src="skillsSliding.jpg" class="picturesTop" alt="Retro MC3">
                   <div class="descHolders">
                   <p class="picturesDesc"> consectetur adipiscing elit!</p>
                   <p class="picturesDesc2">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet. Euismod in pellentesque massa placerat duis ultricies lacus. Eget magna fermentum iaculis eu non.  </p>
                   </div>
-
-
                 </li>
                 
               </ul>
             </div>
           </section>
       </div>
-
-
       
       <div class="committeesSection" id="comm">
-        <p class="NewsHeader">Committees<div class="rbLineNews"></div></p>
-        
+        <p class="NewsHeader">Committees<div class="rbLine"></div></p>
         <div class="comHold">
-          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">CHAMPIONSHIP</p><p class="descCom">Plan local school competitions. Help and advice students on SKills USA,
+          <div class="comObj">
+            <img src="./championshipCom_v2.png">
+            <div class="join">JOIN</div>
+            <p class="headerCom">CHAMPIONSHIP</p><p class="descCom">Plan local school competitions. Help and advice students on SKills USA,
             for District, State, and National competitions</p></div>
-          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">FUNDRAISING</p><p class="descCom">Help fundraise money, plan events, schedules, and many other things to raise money for our plans!</p></div>
-          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">COMMUNITY-SERVICE</p><p class="descCom">Join students together to help out the community, public funraisers for a good cause, fundraising for a public donation, etc.</p></div>
-          <div class="comObj"><img src="./championshipCom_v2.png"><p class="join">JOIN</p><p class="headerCom">SOCIAL</p><p class="descCom">Gather students to a fun event designed by you. 
+          <div class="comObj"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">FUNDRAISING</p><p class="descCom">Help fundraise money, plan events, schedules, and many other things to raise money for our plans!</p></div>
+          <div class="comObj"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">COMMUNITY-SERVICE</p><p class="descCom">Join students together to help out the community, public funraisers for a good cause, fundraising for a public donation, etc.</p></div>
+          <div class="comObj"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">SOCIAL</p><p class="descCom">Gather students to a fun event designed by you. 
             Board games, video games, or simple hangouts!
            Food is also a choice, its up to you.</p></div>
           </div>
@@ -157,10 +233,8 @@
            </p>
         </div>
       </div>
-
-
       <div class="NewsSection">
-        <p class="NewsHeader"> In the News<div class="rbLineNews"></div></p>
+        <p class="NewsHeader">In The News<div class="rbLineNews"></div></p>
         <div class="NewsArea" id="NewsArea">
 
         </div>
@@ -169,15 +243,23 @@
         <p class="TitleCalendar">Our Calendar<div class="brLineCalendar"></div></p>
         <iframe class="Calendar"src="https://calendar.google.com/calendar/embed?height=900&wkst=1&bgcolor=%233F51B5&ctz=America%2FNew_York&showNav=1&showDate=1&showPrint=1&showTabs=1&showTz=0&showCalendars=1&title=SkillsUSA%20Lynn%20Tech%20Calendar&src=YWFkNzM5NzZlYTgyMzRlYjNiZjhlOTk1MzI4ZmNmZjVhN2UwNDY4OWNmZTI3NzViNWFiODk1ZDkzNTgwYzY2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border:solid 1px #777" width="1600" height="900" frameborder="0" scrolling="no"></iframe>
       </div>
-
-       
-       <!--Footer containe r-->
-       <footer class = "footer" id= "footer"></footer>
-
-
-       <!--JQUERY -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-   
+      <div class="footer">
+      <div class="partnerSection">
+        <p class="partnerHeader">Business Partners</p>
+        <div class="partnerImgHldr">
+          <ul class="partnerImg">
+            <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+            <li><img src="/index/partnerLogo/bizLogo3.png" id="morg"></li>
+            <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyrightSection">
+        <p>
+          © 2022 SkillsUSA LVTI, Inc.
+        </p>
+      </div>
+    </div>
       <script>
         // variable is obtained through document(html above) . querySelectorAll(grabs anything from html above, it has to be specified inside the "")
         const buttons = document.querySelectorAll("[data-carousel-button]")
@@ -234,11 +316,18 @@
             var currentMember = members[i]
             console.log(currentMember, i)
             //INDEX!!! INDEX!!!//
+
+        var link = document.createElement("a");
+        link.href = "https://www.youtube.com/watch?v=BIZz4A39rT4&ab_channel=JUSTPlaylist"
+        link.className = "link";
+        link.id = "link" + i
+        document.getElementById("NewsArea").appendChild(link);
+
         var list = document.createElement('li');
         list.id = 'list'+i;
         list.className = 'bubbleThingHolder';
         document.body.appendChild(list);
-        document.getElementById("NewsArea").appendChild(list);
+        document.getElementById("link"+i).appendChild(list);
           //
         var div = document.createElement('div');
         div.id = 'div'+i;
@@ -285,12 +374,12 @@
         element.appendChild(article);
 
 
-        var btn = document.createElement("button");
+        /*var btn = document.createElement("button");
         btn.innerHTML = "Read More";
         btn.id = "butt"+i;
         btn.className = "newsBlockButt";
         var element = document.getElementById('arti'+i);
-        element.appendChild(btn)
+        element.appendChild(btn)*/
 
         if(i == 1){
           var seeMore = document.createElement("a");
@@ -306,20 +395,6 @@
         var menu = document.querySelector('.burger-menu-list');
         menu.classList.toggle('show');
         }
-
-
-
-
-        //jquery backend load header and footer content:
-        $(function(){
-          //$("#header").load("../responsiveHeader.html"); 
-          $("#header").load("../desktopHeader.html"); 
-          $("#footer").load("../footer.html");
-        });
-
-
-
-
       </script>
 </body>
 </html>

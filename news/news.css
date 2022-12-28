@@ -3,13 +3,16 @@ html {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+    touch-action: manipulation;
   }
   body {
     margin: 0;
     background-color: rgb(235, 235, 235);
     overflow-x: hidden;
   }
-  
+  .headerMob{
+    display: none;
+  }
   .header {
     justify-content: center;
     align-items: center;
@@ -114,7 +117,7 @@ html {
 .NewsSection{
     width: 100%;
     padding-bottom: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
   }
   .NewsArea{
     margin-left: 60px;
@@ -149,7 +152,6 @@ html {
 }
 .MemberList{
   margin: 0;
-  
 }
 .bubbleThing{
 
@@ -158,11 +160,11 @@ html {
   width: 550px;
   background-color: black;
   margin-top: 2rem;
-  margin-left: 1rem;
   border-radius: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 150px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   transition: box-shadow 0.2s ease-in-out;
+  background-color: white;
 }
 
 .bubbleThing:hover{
@@ -171,28 +173,27 @@ html {
 
 
 .profileImg{
-  height: 300;
+  height: 40%;
   width: inherit;
   display: block;
   object-fit: cover;
-  border-radius: inherit;
-  padding-bottom: 30px;
+  
 }
 .bubbleThing2{
 
-  top: -100px;
-  background-color: rgb(240, 240, 240);
+  top: 0;
+  background-color: white;
   position: relative;
-  width: inherit;
-  height: 250px;
+  height: 45%;
+  
 }
 .memberName{
   position: relative;
   font-size: 20px;
-  top: 20px;
+  top: 22px;
   color: rgb(0, 0, 0);
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .newsDescription{
@@ -289,3 +290,123 @@ html {
     position: relative;
     z-index: -2;
   }
+  @media only screen and (max-width: 600px){
+    html{
+      letter-spacing: -1.8px;
+    }
+    a { text-decoration: none;
+      color:#000000;
+      letter-spacing: -1px;
+       }
+      /*header menu*/
+      .headerMob{
+        background-color: #fff;
+        display: block;
+        z-index: 5;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+      .header{
+        display: none;
+      }
+      /*beginning of burger menu*/
+        .burger-menu-list {
+          list-style: none;
+          display: none;
+          text-align: left;
+          position: relative;
+          padding: none;
+        }
+        .burger-menu-list.show {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          left:0;
+          z-index: 4;
+          width: 100%;
+        }
+        .burger-menu-icon{
+          height: 50px;
+          width: 70px;
+          padding-left: 20px ;
+          margin: 0;
+          position: absolute;
+          right: 0;
+          padding-top: 10px;
+          font-size: 0;
+        }
+        .burger-menu-list li {
+          background-color: rgb(255, 255, 255);
+          padding-left: 10px;
+          padding-top:  10px;
+          padding-bottom: 10px;
+          font-weight: 500;
+          position: relative;
+          font-size: 16px;
+        }
+        .burger-menu-list a{
+          /*display: block;**/
+          background-color: #fff;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          margin-top: -4px;
+        }
+        .burger-menu-list {
+          box-shadow: 0 5px 6px -6px rgb(0, 0, 0);
+          position: relative;
+        }
+
+      .burger-menu-list li:hover{
+          background-color: #83b0b8;
+      }
+      /*end of burger menu*/
+      /*logo*/
+      .skillsLogo{
+        height: 70px;
+        
+      }
+      /*end of header*/
+      .appLogos{
+        display: none;
+      }
+      .HeaderSeparator{
+        height: 20px;
+        width: 100vw;
+        background-color: #f57076;
+        position: relative;
+        z-index: 3;
+      }
+      .MembersList{
+        padding-left: 0px;
+      }
+      .bubbleThingHolder{
+        margin-left: 0px;
+      margin-right: 0px;
+      }
+      .bubbleThing{
+        width: 80vw;
+        height: 450px;
+        background-color: #fff;
+        margin-bottom: 30px;
+      }
+      .bubbleThing2{
+        height: 210px;
+        letter-spacing: -1px;
+      }
+      .memberName{
+        font-weight: 700;
+      }
+      .email{
+        position: relative;
+        z-index: 30 !important;
+        color: #000000;
+      }
+      .NewsArea{
+        margin: 0;
+      }
+    }
+    

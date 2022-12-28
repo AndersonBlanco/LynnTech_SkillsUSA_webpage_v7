@@ -3,12 +3,15 @@ html {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 body {
   margin: 0;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(31, 31, 31);
   overflow-x: hidden;
+  
 }
+.app{}
 
 .header {
   justify-content: center;
@@ -128,8 +131,8 @@ body {
     .rbLine{
       position: relative;
       top: -36px;
-      margin-left: 44.5%;
-      width: 11%;
+      margin: auto;
+      width: 198px;
       height: 3px;
       background: linear-gradient(to left, #f57076, #94cbf9 100%);
       background-position: 0 100%;
@@ -269,14 +272,21 @@ body {
       z-index: -2;
     }
     @media only screen and (max-width: 600px){
+      html{
+        letter-spacing: -1.8px;
+      }
       a { text-decoration: none;
         color:#000000;
+        letter-spacing: -1px;
          }
         /*header menu*/
         .headerMob{
           background-color: #fff;
           display: block;
-          z-index: 2;
+          z-index: 5;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
         }
         .header{
           display: none;
@@ -287,9 +297,11 @@ body {
             display: none;
             text-align: left;
             position: relative;
+            padding: none;
           }
           .burger-menu-list.show {
-            display: block;
+            display: flex;
+            flex-direction: column;
             margin: 0;
             padding: 0;
             position: absolute;
@@ -305,6 +317,7 @@ body {
             position: absolute;
             right: 0;
             padding-top: 10px;
+            font-size: 0;
           }
           .burger-menu-list li {
             background-color: rgb(255, 255, 255);
@@ -312,6 +325,19 @@ body {
             padding-top:  10px;
             padding-bottom: 10px;
             font-weight: 500;
+            position: relative;
+            font-size: 16px;
+          }
+          .burger-menu-list a{
+            /*display: block;**/
+            background-color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-top: -4px;
+          }
+          .burger-menu-list {
+            box-shadow: 0 5px 6px -6px rgb(0, 0, 0);
             position: relative;
           }
 
@@ -339,14 +365,15 @@ body {
           padding-left: 0px;
         }
         .bubbleThing{
-          width: 80vw;
-          height: 40vh;
+          width: 20rem;
+          height: 20rem;
           margin-left: 0;
         }
         .email{
           position: relative;
           z-index: 30 !important;
           color: #000000;
-          
         }
+        
       }
+      
