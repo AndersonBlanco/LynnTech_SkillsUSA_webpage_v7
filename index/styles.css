@@ -539,29 +539,51 @@ body {
     top: 30px;*/
   }
   .partnerImgHldr{
-    
+ 
     width: 70%;
-    margin-left: 15%;
+    margin-left: 2.5%;
     position: relative;
     top: -20px;
+    display: flex;
+    flex-direction: row;
+    margin-block: 1rem;
   }
   .partnerImg li{
-    display: inline-block;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    margin-inline: .5rem;
+    height: 100%;
+    width: 7rem;
+    
+  }
+
+  .partnerImg img{
+    display: flex;
+    flex-direction: row;
   }
   .partnerImg{
     margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
   }
   .partnerImg img{
+    display: flex;
+    flex-direction: row;
+    
   }
   .partnerImg #morg{
-    margin-bottom: 5%;
-    height: 50%;
-    width: 50%;
+  
+    height: 100%;
+    width: 100%;
   }
   .partnerImg #mtc{
-    margin-top: 0%;
-    height: 60%;
-    width: 60%;
+
+    height: 100%;
+    width: 100%;
   }
   .copyrightSection{
     position: relative;
