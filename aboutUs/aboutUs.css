@@ -22,6 +22,9 @@ html {
     flex-direction: row;
     z-index: 13;
   }
+  .headerMob{
+    display: none;
+  }
   .headerLinks {
     position: absolute;
     right: 5%;
@@ -35,7 +38,26 @@ html {
     font-weight: bold;
     cursor: pointer;
   }
+  @media only screen and (max-width: 1300px){
 
+    .headerLinks{
+    left: 7%;
+    padding-left: 0;
+    width: 100%;
+    }
+    .headerLinks li{
+      padding-left: .25rem;
+      padding-right: .25rem;
+      font-size: 17px;
+    }
+    .logoLink{
+      
+      position: relative;
+      top: -1.4%;
+      left: -37%;
+      
+    }
+  }
   
   /*DROPDOWN MENU COMMITTEES*/
   .dropdown {
@@ -81,7 +103,7 @@ html {
     
     position: relative;
     top: -1.4%;
-    left: -33.8%;
+    left: -37%;
   }
   .SkillsLogo {
     width: 143px;

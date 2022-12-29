@@ -9,7 +9,9 @@ html {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
   }
-  
+  .headerMob{
+    display: none;
+  }
   .header {
     justify-content: center;
     align-items: center;
@@ -103,6 +105,28 @@ html {
     height:40px;
     width:43px;
   }
+
+  @media only screen and (max-width: 1300px){
+
+    .headerLinks{
+    left: 7%;
+    padding-left: 0;
+    width: 100%;
+    }
+    .headerLinks li{
+      padding-left: .25rem;
+      padding-right: .25rem;
+      font-size: 17px;
+    }
+    .logoLink{
+      
+      position: relative;
+      top: -1.4%;
+      left: -37%;
+      
+    }
+  }
+  
   .appLogos #insta{
     height: 40px;
     width: 43px;

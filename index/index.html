@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#1f1f1f">
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="styles.css">
-    <link href = "../global.css" rel = "stylesheet" />
     
     <title>Document</title>
 </head>
@@ -45,16 +44,20 @@
             <a href="/championship/champ.html">CHAMPIONSHIPS</a><a href="/social/social.html">SOCIAL</a><a href="/community/community.html">COMMUNITY SERVICE</a>
             
           </div>
-          
-        </div>
+          <div class="HeaderSeparator"></div>
+        </div>  
         <div class="header">
+          <a href="/index/index.html" class="logoLink"><img
+              src="/header/SkillsLVTI.jpg"
+              class="SkillsLogo"
+              alt="SKILLS USA LOGO"
+              height={100}
+            />
+            </a>
           <ul class="headerLinks" >
             <li><a href="/donate/donate.html">DONATE</a></li>
             <li><a href="/index/index.html#calendar">CALENDAR</a></li>
             <li><a href="/news/news.html">NEWS</a></li>
-       
-            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
-            <li><a href="/awards/awards.html">AWARDS</a></li>
             <li>
               <div class="dropdown">
                 <a href="/index/index.html#comm">COMMITTEES</a>
@@ -66,10 +69,13 @@
                 </div>
               </div>
             </li>
-            <li><a href="/contactUs/contact.html">CONTACT US</a></li>
+       
+            <li><a href="/aboutUs/aboutUs.html">ABOUT US</a></li>
+            <li><a href="/awards/awards.html">AWARDS</a></li>
+            <li><a href="/contactUs/contact.html">CONTACT&nbsp;US</a></li>
             <li><a href="/memberPage/members.html">MEMBERS</a></li>
           </ul>
-            <div class="mobile-dropdown">
+          <div class="mobile-dropdown">
               <p>ppppppp</p>
             <ul class="mobile-dropdown-content" >
               <li><a href="/donate/donate.html">DONATE</a></li>
@@ -100,13 +106,6 @@
               />
               </a>
           </div>
-          <a href="/index/index.html" class="logoLink"><img
-              src="/header/SkillsLVTI.jpg"
-              class="SkillsLogo"
-              alt="SKILLS USA LOGO"
-              height={100}
-            />
-            </a>
         </div>
         
         <div class="placeHolderDiv"></div>
@@ -154,14 +153,14 @@
       <div class="committeesSection" id="comm">
         <p class="NewsHeader">Committees<div class="rbLine"></div></p>
         <div class="comHold">
-          <div class="comObj">
+          <div class="comObj" onclick="location.href='/championship/champ.html';" style="cursor: pointer;">
             <img src="./championshipCom_v2.png">
             <div class="join">JOIN</div>
             <p class="headerCom">CHAMPIONSHIP</p><p class="descCom">Plan local school competitions. Help and advice students on SKills USA,
             for District, State, and National competitions</p></div>
-          <div class="comObj"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">FUNDRAISING</p><p class="descCom">Help fundraise money, plan events, schedules, and many other things to raise money for our plans!</p></div>
-          <div class="comObj"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">COMMUNITY-SERVICE</p><p class="descCom">Join students together to help out the community, public funraisers for a good cause, fundraising for a public donation, etc.</p></div>
-          <div class="comObj"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">SOCIAL</p><p class="descCom">Gather students to a fun event designed by you. 
+          <div class="comObj" onclick="location.href='/fundraising/fundraising.html';" style="cursor: pointer;"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">FUNDRAISING</p><p class="descCom">Help fundraise money, plan events, schedules, and many other things to raise money for our plans!</p></div>
+          <div class="comObj" onclick="location.href='/community/community.html';" style="cursor: pointer;"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">COMMUNITY-SERVICE</p><p class="descCom">Join students together to help out the community, public funraisers for a good cause, fundraising for a public donation, etc.</p></div>
+          <div class="comObj" onclick="location.href='/social/social.html';" style="cursor: pointer;"><img src="./championshipCom_v2.png"><div class="join">JOIN</div><p class="headerCom">SOCIAL</p><p class="descCom">Gather students to a fun event designed by you. 
             Board games, video games, or simple hangouts!
            Food is also a choice, its up to you.</p></div>
           </div>
@@ -247,7 +246,6 @@
       <div class="footer">
       <div class="partnerSection">
         <p class="partnerHeader">Business Partners</p>
-
         <div class="partnerImgHldr">
           <ul class="partnerImg">
             <li><img src="/index/partnerLogo/bizLogo.png" id="mtc"></li>
