@@ -141,19 +141,19 @@ html {
   }
   .headerTextHolder{
     
-    height: 120px;
     width: 100%;
-    background-color: rgb(45, 45, 167);
     z-index: 10;
     position: relative;
   }
   .headerText{
     margin: 0;
-    top: 38px;
     position: relative;
     font-size: 36px;
     color: white;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(45, 45, 167);
   }
   .secondSection{
     padding-top: 90px;
@@ -459,8 +459,8 @@ html {
       .textBarr{
         width: 100%;
       }
-      .headerText{
-        transform: translate(0, -20%);
+      .headerTextHolder{
+      
       }
       iframe{
         width: 90%;
