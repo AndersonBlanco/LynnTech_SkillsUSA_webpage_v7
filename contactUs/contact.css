@@ -134,7 +134,9 @@ body {
     
   }
 }
-
+.MembersList{
+  padding-left: 0px;
+}
   .memberSide{
     
     position: relative;

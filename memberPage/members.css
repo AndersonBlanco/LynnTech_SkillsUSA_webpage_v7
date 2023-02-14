@@ -40,7 +40,7 @@ body {
   .dropdown {
     display: inline-block;
     position: relative;
-    z-index: 2;
+    z-index: 4;
   }
   .dropdown-content {
     display: none;
