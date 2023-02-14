@@ -268,28 +268,29 @@ width: 100%;
     right: 1rem;
   }
   .spotlight{
-    width: 100%;
+    
     height: 63.5vh;
     background-color: white;
   }
 
   .spotlightImgHolder{
-    height: 50%;
+    height: inherit;
     width: 50%;
+     
+ 
   }
   .spotlightImg{
     border: 20px rgb(255, 255, 255) solid;
     display: block;
     object-fit: cover;
-    height: 63.5vh;
+    height: inherit;
     width: 50vw;
     left: 0px;
   }
   .spotlightWordsHolder{
     margin-left: 50%;
-    height: 2vh;
-    width: 40vw;
-    top: -37%;
+    padding-left: 1rem;
+    top: -90%;
     position: relative;
   }
   .spotlightWords1{
@@ -301,17 +302,20 @@ width: 100%;
 
   .spotlightWordsHolder2{
     margin-left: 50%;
-    height: 50vh;
-    width: 40vw;
-    top: -37%;
+    height: 1vh;
+     padding-right: 1rem;
+    
+    top: -100%;
     position: relative;
   }
   .spotlightWords2{
     text-align: left;
     padding-left: 2rem;
     font-weight: 700;
-    font-size:25px;
+    font-size: 1.25rem;
     color: rgb(59, 59, 59);
+    margin-top: 2.5rem;
+    display: flex;
   }
 
   /* NEWS SECTION */
@@ -1199,7 +1203,7 @@ cursor: pointer;
       text-align: center;
       padding-left: 0;
       letter-spacing: -3px;
-      font-size: 1rem;
+  
     }
     .bubbleThingHolder{
       margin-left: 0px;
