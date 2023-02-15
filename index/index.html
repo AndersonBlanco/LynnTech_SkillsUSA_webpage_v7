@@ -120,8 +120,8 @@
         <div class="slider">
           <section aria-label="Newest Photos">
             <div class="carousel" data-carousel>
-              <button class="carousel-button prev" data-carousel-button id="pp">&#60;</button>
-              <button class="carousel-button next" data-carousel-button>&#62;</button>
+              <button class="carousel-button prev" data-carousel-button="prev" >&#60;</button>
+              <button class="carousel-button next" data-carousel-button="next" id="pp">&#62;</button>
               <ul data-slides>
                 <li class="slide" data-active>
                   <img src="DSC_0147.JPG" class="picturesTop" alt="Retro MC">
@@ -304,6 +304,21 @@
             .querySelector("[data-slides]")
             pressed = true;
             
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            // offset equals to button is equal to dataset "next", then return 1, else return -1
+            //const offset = button.dataset.carouselButton === "prev" ? 1: -1
+            
+            
+            const offset = button.dataset.carouselButton === "next" ? 1: -1;
+            
+            console.log(offset)
+            
+            const slides = button
+            .closest("[data-carousel]")
+            .querySelector("[data-slides]")
+            pressed = true;
+            
         const activeSlide = slides.querySelector("[data-active]")
         let newIndex = [...slides.children].indexOf(activeSlide) + offset
         if (newIndex < 0) newIndex = slides.children.length - 1
@@ -325,7 +340,6 @@
         setInterval(function(){
           pressed = false;
         },6000)
-
         var memberImgs = ["/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg"]
         var news1 = ["SkillsUSA LVTI is able to raise 1 million dollars",
          "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
