@@ -120,8 +120,8 @@
         <div class="slider">
           <section aria-label="Newest Photos">
             <div class="carousel" data-carousel>
-              <button class="carousel-button prev" data-carousel-button id="pp">&#60;</button>
-              <button class="carousel-button next" data-carousel-button>&#62;</button>
+              <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+              <button class="carousel-button next" data-carousel-button="next" id="pp">&#62;</button>
               <ul data-slides>
                 <li class="slide" data-active>
                   <img src="DSC_0147.JPG" class="picturesTop" alt="Retro MC">
@@ -142,6 +142,23 @@
                   <div class="descHolders">
                   <p class="picturesDesc"> consectetur adipiscing elit!</p>
                   <p class="picturesDesc2">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet. Euismod in pellentesque massa placerat duis ultricies lacus. Eget magna fermentum iaculis eu non.  </p>
+                  </div>
+                </li>
+                <li class="slide">
+                  <img src="../other_IMAGES/state conference awards/DSC_0027.JPG" class="picturesTop" alt="Retro MC3">
+                  <div class="descHolders">
+                  <p class="picturesDesc">Lynn Tech 8th & 9th grade competitions</p>
+                  <p class="picturesDesc2"> 2nd round avaiable to all competitors! <br/> STarting 3/10/2023  </p>
+                  </div>
+                </li>
+                <li class="slide">
+                  <img src="../other_IMAGES/weTransfer_1/IMG_0273.JPG" class="picturesTop" alt="Retro MC3">
+                  <div class="descHolders">
+                  <p class="picturesDesc"> Follow us on Instagram and other socials</p>
+                  <p class="picturesDesc2"> People who recruited the most earn a prize at end of follow competitions! </p>
+                  <button 
+                  id = 'lm_button'
+                 >Learn More</button>
                   </div>
                 </li>
                 
@@ -245,13 +262,14 @@
 
 
       <div class="spotlight">
-        <div class="spotlightImgHolder">
+
           <img src="../other_IMAGES/weTransfer_2/IMG_9030.JPG" class="spotlightImg"/>
-        </div>
+
         <div class="spotlightWordsHolder">
           <p class="spotlightWords1"> Our Mission!<div class="rbLineSpot"></div></p>
-        </div>
-        <div class="spotlightWordsHolder2">
+     
+        
+       <!-- <div class="spotlightWordsHolder2">-->
           <p class="spotlightWords2"> Our chapter of SkillsUSA is committed to ensuring excellence in all areas of a student’s life.
             Whether it is promoting career and technical education, guiding individual leadership skills, or
             providing service to the community of Lynn, we are invested in the development of the whole
@@ -259,8 +277,13 @@
             technical skills grounded in academics.
             
            </p>
-        </div>
+       <!--  </div>-->
       </div>
+      
+   </div>
+
+
+      
       <div class="NewsSection">
         <p class="NewsHeader">In The News<div class="rbLineNews"></div></p>
         <div class="NewsArea" id="NewsArea">
@@ -423,6 +446,47 @@
         var menu = document.querySelector('.burger-menu-list');
         menu.classList.toggle('show');
         }
+
+
+
+        //onhover function for buttons 
+        function onHover(id){
+          document.getElementById(id).style = `
+          backgroundColor: red;
+            color: white;
+                  padding: 1rem;
+                  font-size: 2rem;
+                  outline: none;
+                  border: none;
+                  z-index: 2;
+                  border-radius: .5rem;
+                  position: relative;
+                  bottom: -14rem;
+                  cursor: pointer;
+                  font-weight: bold;
+          `;
+
+
+          //onUnHover function for buttons
+          function onUnHover(id){
+          document.getElementById(id).style = `
+          background-color: white;
+                  color: black;
+                  padding: 1rem;
+                  font-size: 2rem;
+                  outline: none;
+                  border: none;
+                  z-index: 2;
+                  border-radius: .5rem;
+                  position: relative;
+                  bottom: -14rem;
+                  cursor: pointer;
+                  font-weight: bold;
+                  `
+        
+        }
+      }
+
       </script>
 </body>
 </html>
