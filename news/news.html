@@ -110,9 +110,9 @@
     <script>
                 var memberImgs = ["/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg"
             ,"/newsImgs/skillsNews.jpg","/newsImgs/skillsNews.jpg", "/newsImgs/skillsNews.jpg"]
-        var news1 = ["SkillsUSA LVTI is able to raise 1 million dollars",
+        var news1 = ["Read about Senior Juan Cubides, and his journey into gaming at the University of Southern California. Learn how SkillsUSA played an integral role in helping him to get there.",
          "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
-        "https://www.itemlive.com/2022/05/05/lynn-tech-grads-take-part-in-trade-signing-day/?fbclid=IwAR2fycV8-_E-rSzsB_7-p9nV_ruNT3_rRS9KzA2hUyjjpMBSz8y0ARuuYfQ"]
+        "https://skillsusachampions.org/2022/12/next-level-skills-transform-a-hobby-into-a-career-path/"]
         
         var news2 = ["SkillsUSA LVTI is able to raise 1 million dollars",
          "With hard work and dedication the team at SkillsUSA LVTI has managed to raise a million to give back to kids all over the world!",
@@ -157,7 +157,7 @@
             //INDEX!!! INDEX!!!//
 
         var link = document.createElement("a");
-        link.href = "https://www.youtube.com/watch?v=BIZz4A39rT4&ab_channel=JUSTPlaylist"
+        link.href = members[i][2]
         link.className = "link";
         link.id = "link" + i
         document.getElementById("NewsArea").appendChild(link);
@@ -197,13 +197,6 @@
         var element = document.getElementById('bottomBubble'+i);
         element.appendChild(memberName);
 
-        var description = document.createElement("p");
-        var text = document.createTextNode(currentMember[1]);
-        description.appendChild(text);
-        description.id = 'p'+ i;
-        description.className = 'newsDescription';
-        var element = document.getElementById('bottomBubble'+i);
-        element.appendChild(description);
 
         var article = document.createElement("a")
         article.id = "arti" + i;
@@ -220,8 +213,8 @@
 
 
 
-        const url = new URL("https://www.itemlive.com/?s=Lynn+Voc+tech+Skills+USA");
-         alert(url.protocol); 
+        //const url = new URL("https://www.itemlive.com/?s=Lynn+Voc+tech+Skills+USA");
+         //alert(url.protocol); 
     </script>
 </body>
 </html>

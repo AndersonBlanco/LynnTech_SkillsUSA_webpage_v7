@@ -357,8 +357,12 @@ footer{
 .artAwards a:hover{
   color: #00A4BD !important;
 }
-.headerAwards{
+.year{
   font-weight: 700;
+}
+.headerAwards{
+  font-weight: 500;
+  margin-left: 20px;
 }
 .descAwards{
   margin-left: 1rem;
