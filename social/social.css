@@ -255,11 +255,11 @@ html {
   }
   @media only screen and (max-width: 1000px){
     html{
-      letter-spacing: -1.8px;
+      
     }
     a { text-decoration: none;
       color:#000000;
-      letter-spacing: -1px;
+      
        }
       /*header menu*/
       .headerMob{
@@ -362,7 +362,6 @@ html {
       }
       .slide{
         box-shadow: 0 0 0 0;
-        letter-spacing: -.8px;
       }
       .picturesDesc{
         top: 5%;
@@ -408,7 +407,6 @@ html {
       .spotlightWords2{
         text-align: center;
         padding-left: 0;
-        letter-spacing: -3px;
       }
       .bubbleThingHolder{
         margin-left: 0px;
@@ -422,13 +420,11 @@ html {
       }
       .bubbleThing2{
         height: 210px;
-        letter-spacing: -1px;
       }
       .memberName{
         font-weight: 700;
       }
       .seeMoreLink{
-        letter-spacing: 0px;
       }
       .newsDescription{
         font-size: 4.3vw;

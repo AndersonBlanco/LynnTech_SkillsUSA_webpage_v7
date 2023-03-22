@@ -1,7 +1,8 @@
 html {
   font-family: sans-serif;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
   scroll-behavior: smooth;
   touch-action: manipulation;
 }
@@ -269,7 +270,7 @@ width: 100%;
   }
   .spotlight{
     
-    height: 63.5vh;
+    
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -278,7 +279,7 @@ width: 100%;
   .spotlightImgHolder{
     height: inherit;
     width: fit-content;
-     
+    
  
   }
   .spotlightImg{
@@ -287,7 +288,8 @@ width: 100%;
     object-fit: cover;
     height: inherit;
     width: 50vw;
-
+    border: 5px rgb(255, 255, 255) solid;
+    
   }
   .spotlightWordsHolder{
 
@@ -307,7 +309,7 @@ width: 100%;
   .spotlightWordsHolder2{
     margin-left: 50%;
     height: 1vh;
-     padding-right: 1rem;
+    padding-right: 1rem;
    background-color: transparent;
    
 
@@ -317,7 +319,7 @@ width: 100%;
     text-align: left;
     padding-left: 2rem;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: clamp(1.2rem, 2.2vw, 1.7rem);
     color: rgb(59, 59, 59);
     margin-top: 2.5rem;
     display: flex;
@@ -851,7 +853,7 @@ cursor: pointer;
     }
 
     .comObj .descCom{
-       font-size: 1.25rem;
+       font-size: clamp(1rem, 2.2vw ,1rem)
     }
     .comObj:hover > img{
       filter: brightness(50%)
@@ -949,7 +951,7 @@ cursor: pointer;
         margin-top: -.5rem;
         color: black;
         padding-inline: 1.5rem;
-        letter-spacing: .1rem;
+        
         background-color: rgb(235, 235, 235);
         height: 12rem;
       }
@@ -1048,11 +1050,11 @@ cursor: pointer;
 
 @media only screen and (max-width: 606px){
   html{
-    letter-spacing: -1.8px;
+    
   }
   a { text-decoration: none;
     color:#000000;
-    letter-spacing: -1px;
+    
      }
     /*header menu*/
     .headerMob{
@@ -1146,7 +1148,7 @@ cursor: pointer;
 
     .slide{
       box-shadow: 0 0 0 0;
-      letter-spacing: -.8px;
+      
     }
     .picturesDesc{
       top: 5%;
@@ -1186,34 +1188,35 @@ cursor: pointer;
       display: none;
     }
     .spotlight{
-      height: 30rem;
+      
     }
-    .spotlightImgHolder{
+    .spotlightImg{
       display: none;
     }
     .spotlightWordsHolder{
       top: 40px;
       text-align: center;
-      width: 80vw;
-      margin-left: 10vw;
+      width: 100vw;
+      
     }
     .spotlightWords1{
       padding-left: 0;
-      margin-top: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
       text-align: center;
       
     }
     .spotlightWordsHolder2{
       top: 40px;
-      text-align: center;
+      
       height: 50vh;
       width: 80vw;
-      margin-left: 10vw;
     }
     .spotlightWords2{
+      
       text-align: center;
-      padding-left: 0;
-      letter-spacing: -3px;
+      margin-top: 0;
+      padding: 20px;
   
     }
     .bubbleThingHolder{
@@ -1228,17 +1231,17 @@ cursor: pointer;
     }
     .bubbleThing2{
       height: 210px;
-      letter-spacing: -1px;
+      
     }
     .memberName{
       font-weight: 700;
     }
     .seeMoreLink{
-      letter-spacing: 0px;
+      
       bottom: -70px;
     }
     .newsDescription{
-      font-size: 4.3vw;
+      font-size: clamp(1rem, 2.2vw, 1.5rem)
     }
   
     .Calendar{
@@ -1257,7 +1260,8 @@ cursor: pointer;
       display: none;
     }
     .rbLineSpot{
-      margin: auto;
+      margin-left: 15% ;
+      width: 60%;
     }
     .partnerImg{
       padding: 0;

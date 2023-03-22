@@ -1,7 +1,7 @@
 html {
   font-family: sans-serif;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition-duration: 1s;
   touch-action: manipulation;
 }
@@ -425,11 +425,9 @@ legend{
 }
 @media only screen and (max-width: 1000px){
   html{
-    letter-spacing: -1.8px;
   }
   a { text-decoration: none;
     color:#000000;
-    letter-spacing: -1px;
      }
     /*header menu*/
     .headerMob{
