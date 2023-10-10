@@ -2,5 +2,4 @@
 
 ## Content: 
 * Anything local LVTI-SkillsUSA related
-* 
   
