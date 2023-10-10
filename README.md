@@ -1,5 +1,6 @@
 # Offciial Skills USA lvti webpage 
 
 ## Content: 
-* Anything Lvti SkillsUSA
+* Anything local LVTI-SkillsUSA related
+* 
   
