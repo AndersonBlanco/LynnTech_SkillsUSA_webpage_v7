@@ -1,5 +1,5 @@
 # Offciial Skills USA lvti webpage 
 
-## COntent: 
+## Content: 
 * Anything Lvti SkillsUSA
   
